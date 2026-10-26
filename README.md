@@ -22,17 +22,17 @@ An Android companion app for **Eldritch Horror** and **Arkham Horror (2nd editio
     <td><img src="docs/screenshots/phone-home.png" alt="Home screen" width="240"></td>
     <td><img src="docs/screenshots/phone-eh-board.png" alt="Eldritch Horror board" width="240"></td>
     <td><img src="docs/screenshots/phone-eh-card.png" alt="An Eldritch Horror encounter with colour-coded terms" width="240"></td>
-    <td><img src="docs/screenshots/phone-ah-card-dark.png" alt="An Arkham Horror encounter in dark mode" width="240"></td>
+    <td><img src="docs/screenshots/phone-ah-board-dark.png" alt="Arkham Horror board in dark mode" width="240"></td>
   </tr>
   <tr>
     <td align="center">Pick a game</td>
     <td align="center">Eldritch board: a deck per location</td>
     <td align="center">Encounter with highlighted terms</td>
-    <td align="center">Arkham Horror in dark mode</td>
+    <td align="center">Arkham board in dark mode</td>
   </tr>
 </table>
 
-![Arkham Horror on a tablet: Other Worlds with their gate colours, and an Other encounter drawn for R'lyeh](docs/screenshots/tablet-ah-light.png)
+![Arkham Horror on a tablet: locations coloured by neighbourhood card back, with an Independence Square encounter open](docs/screenshots/tablet-ah-light.png)
 
 ### Colour-coded card text
 
