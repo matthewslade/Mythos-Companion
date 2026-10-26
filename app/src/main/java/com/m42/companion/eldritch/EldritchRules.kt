@@ -1,6 +1,5 @@
 package com.m42.companion.eldritch
 
-import com.m42.companion.data.EldritchCard
 import com.m42.companion.data.EldritchData
 import com.m42.companion.engine.DeckState
 import kotlinx.serialization.Serializable
@@ -142,18 +141,40 @@ object EldritchDecks {
 
     fun name(deckId: String) = names[deckId] ?: deckId
 
+    /**
+     * Three-part cards whose parts are drawn as separate encounters, like the Arkham Horror location decks:
+     * each part (e.g. Arkham, San Francisco, Buenos Aires) gets its own deck.
+     */
+    val SPLIT = listOf(
+        AMERICAS, EUROPE, ASIA, ANTARCTICA_WEST, ANTARCTICA_EAST, AFRICA, EGYPT, DREAMLANDS, GENERAL,
+        RESEARCH, ANTARCTICA_RESEARCH,
+    )
+
+    /** The deck holding part [index] (0–2) of a split deck, e.g. "americas#1" for Arkham. */
+    fun part(deckId: String, index: Int) = "$deckId#${index + 1}"
+
+    fun parts(deckId: String) = (0..2).map { part(deckId, it) }
+
+    /** Encounter id for part [index] of a card, e.g. "A1#1". */
+    fun encounterId(cardId: String, index: Int) = "$cardId#${index + 1}"
+
     /** Decks the original app only loaded for the selected Ancient One. */
     fun isAncientOneDeck(deckId: String) = deckId == RESEARCH || deckId.startsWith("special-")
 
     /** Builds and shuffles every deck for a new game, mirroring the original loader's merge order. */
     fun build(data: EldritchData, config: EldritchConfig, random: Random): DeckState {
-        val decks = linkedMapOf<String, MutableList<String>>(RESEARCH to mutableListOf())
+        val decks = linkedMapOf<String, MutableList<String>>()
+        parts(RESEARCH).forEach { decks[it] = mutableListOf() }
         for (expansion in EldritchExpansion.entries) {
             if (!config.has(expansion)) continue
             for (card in data.cards) {
                 if (card.expansion != expansion.id) continue
                 if (isAncientOneDeck(card.deck) && card.ancientOne != config.ancientOne) continue
-                decks.getOrPut(card.deck) { mutableListOf() } += card.id
+                if (card.deck in SPLIT) {
+                    for (index in 0..2) decks.getOrPut(part(card.deck, index)) { mutableListOf() } += encounterId(card.id, index)
+                } else {
+                    decks.getOrPut(card.deck) { mutableListOf() } += card.id
+                }
             }
         }
         return DeckState.of(decks, random)
@@ -174,5 +195,3 @@ object EldritchBoardRules {
 
     fun showCitiesInRuin(c: EldritchConfig) = c.has(EldritchExpansion.CITIES_IN_RUIN)
 }
-
-fun EldritchCard.headerLine(): String = sections.mapNotNull { it.header }.joinToString(" · ")

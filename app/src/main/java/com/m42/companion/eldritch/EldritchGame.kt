@@ -14,22 +14,38 @@ import kotlin.random.Random
 
 /** Everything needed to resume a game; this is what gets saved. */
 @Serializable
-data class EldritchSession(val config: EldritchConfig, val state: DeckState)
+data class EldritchSession(
+    val config: EldritchConfig,
+    val state: DeckState,
+    /** Saves from app 1.0 (format 1) used whole three-part cards and cannot be continued. */
+    val format: Int = 1,
+)
+
+private const val CURRENT_FORMAT = 2
 
 /** Game logic over a session. Every mutation returns a new session. */
 class EldritchGame(private val data: EldritchData) {
     private val cards: Map<String, EldritchCard> = data.cards.associateBy { it.id }
 
-    fun card(id: String) = cards.getValue(id)
+    /** Header of each part deck, e.g. "americas#1" to "Arkham". */
+    private val partHeaders: Map<String, String> = EldritchDecks.SPLIT.flatMap { deckId ->
+        val sample = data.cards.firstOrNull { it.deck == deckId }
+        (0..2).map { EldritchDecks.part(deckId, it) to sample?.sections?.get(it)?.header.orEmpty() }
+    }.toMap()
+
+    fun card(id: String) = cards.getValue(id.substringBefore('#'))
 
     /** True when every card and the Ancient One the session refers to still exist in the bundled data. */
     fun isValid(session: EldritchSession): Boolean =
-        EldritchExpansion.allAncientOnes.any { it.id == session.config.ancientOne } &&
-            session.state.decks.values.all { deck -> deck.all(cards::containsKey) } &&
-            session.state.discard.all { it.cardId in cards }
+        session.format == CURRENT_FORMAT &&
+            EldritchExpansion.allAncientOnes.any { it.id == session.config.ancientOne } &&
+            session.state.decks.values.all { deck -> deck.all(::exists) } &&
+            session.state.discard.all { exists(it.cardId) }
+
+    private fun exists(id: String) = id.substringBefore('#') in cards
 
     fun newSession(config: EldritchConfig, random: Random) =
-        EldritchSession(config, EldritchDecks.build(data, config, random))
+        EldritchSession(config, EldritchDecks.build(data, config, random), CURRENT_FORMAT)
 
     fun title(session: EldritchSession) = EldritchExpansion.ancientOne(session.config.ancientOne).name
 
@@ -41,12 +57,17 @@ class EldritchGame(private val data: EldritchData) {
         return data.cards.firstOrNull { it.deck == deckId && it.ancientOne == session.config.ancientOne }?.title
     }
 
-    /** The three places a location deck covers, e.g. "Arkham · San Francisco · Buenos Aires". */
-    fun deckHeaders(deckId: String): String? =
-        data.cards.firstOrNull { it.deck == deckId }?.headerLine()
+    /** Name of a part deck on its own, e.g. "Arkham" or "City". */
+    fun partName(partDeckId: String): String = partHeaders[partDeckId] ?: partDeckId
 
-    fun deckName(session: EldritchSession, deckId: String): String =
-        specialDeckName(session, deckId) ?: EldritchDecks.name(deckId)
+    fun deckName(session: EldritchSession, deckId: String): String {
+        partHeaders[deckId]?.let { header ->
+            // City / Wilderness / Sea need their deck's name to tell General and Research apart.
+            val parent = deckId.substringBefore('#')
+            return if (parent in LOCATION_DECKS) header else "${EldritchDecks.name(parent)} – $header"
+        }
+        return specialDeckName(session, deckId) ?: EldritchDecks.name(deckId)
+    }
 
     /** Header of the top card, as shown on the Expedition / Mystic Ruins / Dream-Quest buttons. */
     fun currentLocation(session: EldritchSession, deckId: String): String {
@@ -72,14 +93,14 @@ class EldritchGame(private val data: EldritchData) {
         if (deckId == DISCARD_PILE) {
             val pile = session.state.discard
             if (pile.isEmpty()) return session to null
-            val faces = pile.map { face(session, card(it.cardId), it.encountered, discardView = true) }
+            val faces = pile.map { face(session, it.cardId, it.deck, it.encountered, discardView = true) }
             return session to Gallery(deckId, faces, isDiscardPile = true)
         }
         if (!session.state.hasDeck(deckId)) return session to null
         val prepared = session.copy(state = session.state.prepare(deckId, random))
         val deck = prepared.state.deck(deckId)
         if (deck.isEmpty()) return prepared to null
-        val faces = deck.map { face(prepared, card(it), Encountered.NONE, discardView = false) }
+        val faces = deck.map { face(prepared, it, deckId, Encountered.NONE, discardView = false) }
         return prepared to Gallery(deckId, faces, isDiscardPile = false)
     }
 
@@ -96,8 +117,23 @@ class EldritchGame(private val data: EldritchData) {
     fun returnToDeck(session: EldritchSession, face: CardFace, random: Random) =
         session.copy(state = session.state.returnFromDiscard(face.cardId, random))
 
-    private fun face(session: EldritchSession, card: EldritchCard, encountered: Encountered, discardView: Boolean): CardFace {
-        val name = deckName(session, card.deck)
+    private fun face(session: EldritchSession, id: String, deckId: String, encountered: Encountered, discardView: Boolean): CardFace {
+        val card = card(id)
+        val name = deckName(session, deckId)
+        if ('#' in id) {
+            // One part of a three-part card, drawn on its own.
+            val section = card.sections[id.substringAfter('#').toInt() - 1]
+            return CardFace(
+                cardId = id,
+                deck = deckId,
+                pageTitle = if (discardView) "Discard – $name" else name,
+                sections = listOf(section),
+                selectable = if (discardView) emptySet() else setOf(Encountered.TOP),
+                encountered = encountered,
+                textStyle = TextStyle.ELDRITCH,
+                tag = EldritchDecks.name(card.deck),
+            )
+        }
         // Named cards open with a lead-in paragraph; only their Pass/Fail parts resolve the card.
         val selectable = when {
             discardView -> emptySet()
@@ -105,13 +141,21 @@ class EldritchGame(private val data: EldritchData) {
             else -> setOf(Encountered.TOP, Encountered.MIDDLE, Encountered.BOTTOM)
         }.filter { card.sections[SectionPositions.indexOf(it)].text.isNotBlank() }.toSet()
         return CardFace(
-            cardId = card.id,
-            deck = card.deck,
+            cardId = id,
+            deck = deckId,
             pageTitle = if (discardView) "Discard – $name" else name,
             sections = card.sections,
             selectable = selectable,
             encountered = encountered,
             textStyle = TextStyle.ELDRITCH,
+        )
+    }
+
+    private companion object {
+        /** Split decks named after places; the others (General, Research) are named after space types. */
+        val LOCATION_DECKS = setOf(
+            EldritchDecks.AMERICAS, EldritchDecks.EUROPE, EldritchDecks.ASIA, EldritchDecks.ANTARCTICA_WEST,
+            EldritchDecks.ANTARCTICA_EAST, EldritchDecks.AFRICA, EldritchDecks.EGYPT, EldritchDecks.DREAMLANDS,
         )
     }
 }

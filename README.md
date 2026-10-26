@@ -5,6 +5,7 @@ An Android companion app for **Eldritch Horror** and **Arkham Horror (2nd editio
 - **Eldritch Horror** recreates the abandoned *Eldritch Companion* app (v8.0):
   - Expansions from Base through Masks of Nyarlathotep, including the side boards and the Cosmic Alignment and Litany of Secrets preludes.
   - Every encounter deck: regions, side boards, General, Gate, Expedition (with Remove), Mystic Ruins, Dream-Quest, Research, the Ancient One's Special decks, Disaster and Devastation.
+  - As on the Arkham side, each location and space type has its own deck: Arkham, San Francisco and Buenos Aires instead of one Americas deck, and City, Wilderness and Sea for General and Research.
   - Swipe through a deck and tap the encounter you resolved to discard it. Browse the discard pile, with the parts of each card you didn't resolve shaded, and return cards to their decks.
 - **Arkham Horror** replaces the 2012 *Arkham Encounters* app and works the same way as the Eldritch side.
   - **Decks:** every location and Other World has its own shuffled deck. All eight expansions are supported.

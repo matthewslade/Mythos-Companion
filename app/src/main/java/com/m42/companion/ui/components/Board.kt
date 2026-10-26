@@ -81,6 +81,8 @@ sealed interface BoardItem {
         /** Gate colours for Arkham Other Worlds. */
         val dots: List<Color> = emptyList(),
         val secondaryAction: Pair<String, () -> Unit>? = null,
+        /** Takes a whole row of the grid. */
+        val wide: Boolean = false,
     ) : BoardItem {
         override val key = "deck:$deckId"
     }
@@ -166,7 +168,7 @@ private fun DeckGrid(items: List<BoardItem>, minButtonWidth: Dp, modifier: Modif
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        items(items, key = { it.key }, span = { if (it is BoardItem.Heading) GridItemSpan(maxLineSpan) else GridItemSpan(1) }) { item ->
+        items(items, key = { it.key }, span = { if (it is BoardItem.Heading || (it is BoardItem.Deck && it.wide)) GridItemSpan(maxLineSpan) else GridItemSpan(1) }) { item ->
             when (item) {
                 is BoardItem.Heading -> Text(
                     item.title,

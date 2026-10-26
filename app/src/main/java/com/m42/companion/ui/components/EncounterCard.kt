@@ -65,7 +65,7 @@ fun EncounterCard(
                     Encountered.TOP, Encountered.MIDDLE, Encountered.BOTTOM -> position != face.encountered
                     else -> false
                 }
-                val text = remember(section.text, face.textStyle, colors) { cardMarkup(section.text, face.textStyle, colors) }
+                val marked = remember(section.text, face.textStyle, colors) { cardMarkup(section.text, face.textStyle, colors) }
                 Column(
                     Modifier
                         .fillMaxWidth()
@@ -95,7 +95,8 @@ fun EncounterCard(
                     }
                     if (section.text.isNotBlank()) {
                         Text(
-                            text,
+                            marked.text,
+                            inlineContent = remember(marked, colors) { termIcons(marked.kinds, colors) },
                             style = CardBodyStyle.copy(
                                 fontSize = CardBodyStyle.fontSize * textScale,
                                 lineHeight = CardBodyStyle.lineHeight * textScale,

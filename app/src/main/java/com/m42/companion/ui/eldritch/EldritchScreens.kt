@@ -176,7 +176,7 @@ fun EldritchBoardScreen(vm: EldritchViewModel, onBack: () -> Unit, onOpenGallery
             if (s.state.deck(EldritchDecks.EXPEDITION).isEmpty()) message("The Expedition deck is empty.")
             else removing = true
         },
-        minButtonWidth = 300.dp,
+        minButtonWidth = 160.dp,
         gallery = gallery,
         galleryActions = galleryActions(vm),
         snackbar = snackbar,
@@ -222,30 +222,37 @@ private object DeckColors {
     val discard = Color(0xFF3D4876)
 }
 
-/** The buttons of the original main screen, in the same order and with the same visibility rules. */
+/**
+ * The buttons of the original main screen, in the same order and with the same visibility rules. Three-part
+ * decks are shown as one button per part, each drawing from its own deck.
+ */
 private fun eldritchBoardItems(game: EldritchGame, session: EldritchSession, onRemoveExpedition: () -> Unit): List<BoardItem> {
     val c = session.config
-    fun deck(id: String, color: Color, detail: String? = game.deckHeaders(id), label: String = game.deckName(session, id)) =
-        BoardItem.Deck(id, label, detail, color)
+    fun deck(id: String, color: Color, detail: String? = null) =
+        BoardItem.Deck(id, game.deckName(session, id), detail, color, wide = true)
 
     return buildList {
-        add(BoardItem.Heading("Encounters"))
-        add(deck(EldritchDecks.AMERICAS, DeckColors.americas))
-        add(deck(EldritchDecks.EUROPE, DeckColors.europe))
-        add(deck(EldritchDecks.ASIA, DeckColors.asia))
+        fun split(deckId: String, color: Color) {
+            add(BoardItem.Heading(EldritchDecks.name(deckId)))
+            for (part in EldritchDecks.parts(deckId)) add(BoardItem.Deck(part, game.partName(part), color = color))
+        }
+
+        split(EldritchDecks.AMERICAS, DeckColors.americas)
+        split(EldritchDecks.EUROPE, DeckColors.europe)
+        split(EldritchDecks.ASIA, DeckColors.asia)
         if (EldritchBoardRules.showAntarctica(c)) {
-            add(deck(EldritchDecks.ANTARCTICA_WEST, DeckColors.antarcticaWest))
-            add(deck(EldritchDecks.ANTARCTICA_EAST, DeckColors.antarcticaEast))
+            split(EldritchDecks.ANTARCTICA_WEST, DeckColors.antarcticaWest)
+            split(EldritchDecks.ANTARCTICA_EAST, DeckColors.antarcticaEast)
         }
         if (EldritchBoardRules.showEgypt(c)) {
-            add(deck(EldritchDecks.AFRICA, DeckColors.africa))
-            add(deck(EldritchDecks.EGYPT, DeckColors.egypt))
+            split(EldritchDecks.AFRICA, DeckColors.africa)
+            split(EldritchDecks.EGYPT, DeckColors.egypt)
         }
-        if (EldritchBoardRules.showDreamlands(c)) add(deck(EldritchDecks.DREAMLANDS, DeckColors.dreamlands))
-        add(deck(EldritchDecks.GENERAL, DeckColors.general))
+        if (EldritchBoardRules.showDreamlands(c)) split(EldritchDecks.DREAMLANDS, DeckColors.dreamlands)
+        split(EldritchDecks.GENERAL, DeckColors.general)
 
         add(BoardItem.Heading("Gates & Expeditions"))
-        add(deck(EldritchDecks.GATE, DeckColors.gate, detail = null))
+        add(deck(EldritchDecks.GATE, DeckColors.gate))
         add(
             deck(EldritchDecks.EXPEDITION, DeckColors.expedition, detail = game.currentLocation(session, EldritchDecks.EXPEDITION))
                 .copy(secondaryAction = "Remove" to onRemoveExpedition),
@@ -257,14 +264,11 @@ private fun eldritchBoardItems(game: EldritchGame, session: EldritchSession, onR
             add(deck(EldritchDecks.DREAM_QUEST, DeckColors.dreamQuest, detail = game.currentLocation(session, EldritchDecks.DREAM_QUEST)))
         }
 
-        add(BoardItem.Heading("Research"))
-        add(deck(EldritchDecks.RESEARCH, DeckColors.research))
-        if (EldritchBoardRules.showAntarctica(c)) {
-            add(deck(EldritchDecks.ANTARCTICA_RESEARCH, DeckColors.antarcticaResearch))
-        }
+        split(EldritchDecks.RESEARCH, DeckColors.research)
+        if (EldritchBoardRules.showAntarctica(c)) split(EldritchDecks.ANTARCTICA_RESEARCH, DeckColors.antarcticaResearch)
 
         val specials = listOf(EldritchDecks.SPECIAL_1, EldritchDecks.SPECIAL_2, EldritchDecks.SPECIAL_3)
-            .mapIndexedNotNull { i, id -> game.specialDeckName(session, id)?.let { deck(id, DeckColors.special[i], detail = null) } }
+            .mapIndexedNotNull { i, id -> game.specialDeckName(session, id)?.let { deck(id, DeckColors.special[i]) } }
         if (specials.isNotEmpty()) {
             add(BoardItem.Heading("Special"))
             addAll(specials)
@@ -272,13 +276,13 @@ private fun eldritchBoardItems(game: EldritchGame, session: EldritchSession, onR
 
         if (EldritchBoardRules.showCitiesInRuin(c)) {
             add(BoardItem.Heading("Cities in Ruin"))
-            add(deck(EldritchDecks.DISASTER, DeckColors.disaster, detail = null))
-            add(deck(EldritchDecks.DEVASTATION, DeckColors.devastation, detail = null))
+            add(deck(EldritchDecks.DISASTER, DeckColors.disaster))
+            add(deck(EldritchDecks.DEVASTATION, DeckColors.devastation))
         }
 
         add(BoardItem.Heading(""))
         val discards = session.state.discard.size
-        add(BoardItem.Deck(DISCARD_PILE, "Discard", if (discards == 1) "1 card" else "$discards cards", DeckColors.discard))
+        add(deck(DISCARD_PILE, DeckColors.discard, detail = if (discards == 1) "1 card" else "$discards cards").copy(label = "Discard"))
     }
 }
 

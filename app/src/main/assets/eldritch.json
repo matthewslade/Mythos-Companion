@@ -11141,7 +11141,7 @@
     },
     {
      "header": "Fail",
-     "text": "The palace guards interrupt you and demand to know who you are [INFLUENCE]. If you pass, they apologize and vow to explore the chamber on your behalf; retreat Doom by l. If you fail, they do not believe your story; gain a Detained Condition."
+     "text": "The palace guards interrupt you and demand to know who you are [INFLUENCE]. If you pass, they apologize and vow to explore the chamber on your behalf; retreat Doom by 1. If you fail, they do not believe your story; gain a Detained Condition."
     }
    ]
   },
@@ -13785,7 +13785,7 @@
     },
     {
      "header": "Sea",
-     "text": "You search for a wreck reported to be carrying an object of great importance [OBSERVATION - 1]. If you pass, choose one — report the location to maritime authorities to gain this Clue and 1 additional Clue; or salvage the wreck to gain the Key to Carcosa Artifact. If you fail, the ship is never found; advance Doom by l."
+     "text": "You search for a wreck reported to be carrying an object of great importance [OBSERVATION - 1]. If you pass, choose one — report the location to maritime authorities to gain this Clue and 1 additional Clue; or salvage the wreck to gain the Key to Carcosa Artifact. If you fail, the ship is never found; advance Doom by 1."
     }
    ]
   },
@@ -13985,7 +13985,7 @@
     },
     {
      "header": "Sea",
-     "text": "You enlist with the crew of a cargo ship owned by the Cult of the Yellow Sign, If you have a DEAL Condition, they vet you carefully; resolve the reckoning effect of each DEAL Condition you have. Having infiltrated the operation, you think you can hijack the ship. You may gain a Wanted Condition to retreat Doom by l."
+     "text": "You enlist with the crew of a cargo ship owned by the Cult of the Yellow Sign, If you have a DEAL Condition, they vet you carefully; resolve the reckoning effect of each DEAL Condition you have. Having infiltrated the operation, you think you can hijack the ship. You may gain a Wanted Condition to retreat Doom by 1."
     }
    ]
   },
@@ -17813,7 +17813,7 @@
     },
     {
      "header": "Fail",
-     "text": "Breaking in at night, you find the water teeming with serpents. Gain 1 MADNESS Condition. You try to summon the courage to remove the snakes [WILL]. If you pass, you clear the area; retreat Doom by l. If you fail, you scream and run; lose 2 Sanity."
+     "text": "Breaking in at night, you find the water teeming with serpents. Gain 1 MADNESS Condition. You try to summon the courage to remove the snakes [WILL]. If you pass, you clear the area; retreat Doom by 1. If you fail, you scream and run; lose 2 Sanity."
     }
    ]
   },
@@ -17853,7 +17853,7 @@
     },
     {
      "header": "Fail",
-     "text": "You spend the night alone in the Cemetery. Lose 1 Sanity. The cult arrives, and you follow them [OBSERVATION]. If you pass, you tell the police of their lair; retreat Doom by l. If you fail, you are blamed for the theft; gain a Detained Condition."
+     "text": "You spend the night alone in the Cemetery. Lose 1 Sanity. The cult arrives, and you follow them [OBSERVATION]. If you pass, you tell the police of their lair; retreat Doom by 1. If you fail, you are blamed for the theft; gain a Detained Condition."
     }
    ]
   },
@@ -17893,7 +17893,7 @@
     },
     {
      "header": "Fail",
-     "text": "You collapse in a panic. Lose 1 Sanity. You beg the spirits to have mercy [INFLUENCE]. If you pass, the ghosts see the good within you and relent; retreat Doom by l. If you fail, they terrorize you until you snap; gain 2 MADNESS Conditions."
+     "text": "You collapse in a panic. Lose 1 Sanity. You beg the spirits to have mercy [INFLUENCE]. If you pass, the ghosts see the good within you and relent; retreat Doom by 1. If you fail, they terrorize you until you snap; gain 2 MADNESS Conditions."
     }
    ]
   },
@@ -17949,7 +17949,7 @@
     },
     {
      "header": "Wilderness",
-     "text": "You explore a tunnel left behind by some sort of giant worm. Gain this Clue. You hear a rumbling in the tunnels ahead of you and try to hide [OBSERVATION - 1]. If you pass, you find a place to hide; gain 1 additional Clue. If you fail, you lead the creature toward civilization as you flee; advance Doom by l."
+     "text": "You explore a tunnel left behind by some sort of giant worm. Gain this Clue. You hear a rumbling in the tunnels ahead of you and try to hide [OBSERVATION - 1]. If you pass, you find a place to hide; gain 1 additional Clue. If you fail, you lead the creature toward civilization as you flee; advance Doom by 1."
     },
     {
      "header": "Sea",
@@ -18073,7 +18073,7 @@
     },
     {
      "header": "Sea",
-     "text": "You do not remember seeing the man in black when your ship left port, but his offer seems genuine. He offers you knowledge of how to use water against the cthonians for an undisclosed favor at a future date. You may gain a Dark Pact Condition to gain this Clue and retreat Doom by l."
+     "text": "You do not remember seeing the man in black when your ship left port, but his offer seems genuine. He offers you knowledge of how to use water against the cthonians for an undisclosed favor at a future date. You may gain a Dark Pact Condition to gain this Clue and retreat Doom by 1."
     }
    ]
   },
@@ -18329,7 +18329,7 @@
     },
     {
      "header": "Wilderness",
-     "text": "You follow a series of glowing stones that lead you to a tiny camp where some shady-looking men are talking. Gain this Clue. You attempt to raid their camp [OBSERVATION]. If you pass, you get away unseen; gain 1 random WEAPON Asset from the deck. If you fail, they leave with their weapons; advance Doom by l."
+     "text": "You follow a series of glowing stones that lead you to a tiny camp where some shady-looking men are talking. Gain this Clue. You attempt to raid their camp [OBSERVATION]. If you pass, you get away unseen; gain 1 random WEAPON Asset from the deck. If you fail, they leave with their weapons; advance Doom by 1."
     },
     {
      "header": "Sea",
@@ -18369,7 +18369,7 @@
     },
     {
      "header": "Wilderness",
-     "text": "The earth falls away beneath your feet, and you find yourself falling toward the gaping maw of a horrifying worm creature. An Ancient Cthonian Epic Monster ambushes you! If you pass the [STRENGTH] test, the severely wounded creature returns to its subterranean lair; retreat Doom by l."
+     "text": "The earth falls away beneath your feet, and you find yourself falling toward the gaping maw of a horrifying worm creature. An Ancient Cthonian Epic Monster ambushes you! If you pass the [STRENGTH] test, the severely wounded creature returns to its subterranean lair; retreat Doom by 1."
     },
     {
      "header": "Sea",
@@ -18901,7 +18901,7 @@
     },
     {
      "header": "Fail",
-     "text": "You search the area [OBSERVATION - 1]. If you pass, you find that the treasure was destroyed, but its fragments can still be used to ward off evil; retreat Doom by l. If you fail, you search the desolate wasteland fruitlessly; lose 1 Sanity and gain 1 MADNESS Condition."
+     "text": "You search the area [OBSERVATION - 1]. If you pass, you find that the treasure was destroyed, but its fragments can still be used to ward off evil; retreat Doom by 1. If you fail, you search the desolate wasteland fruitlessly; lose 1 Sanity and gain 1 MADNESS Condition."
     }
    ]
   },
@@ -19117,7 +19117,7 @@
     },
     {
      "header": "Pass",
-     "text": "You attempt to cover the expenses necessary to organize a search party [INFLUENCE]. If you pass, your effort was worthwhile and you rescue thousands of people; retreat Doom by l. If you fail, you achieve nothing but exhausting yourself; lose 2 Health."
+     "text": "You attempt to cover the expenses necessary to organize a search party [INFLUENCE]. If you pass, your effort was worthwhile and you rescue thousands of people; retreat Doom by 1. If you fail, you achieve nothing but exhausting yourself; lose 2 Health."
     },
     {
      "header": "Fail",
@@ -20301,7 +20301,7 @@
    "sections": [
     {
      "header": "City",
-     "text": "Agents marked by the yellow sign deliver to you a grim missive. The dark within the Hyades will keep the enemy at bay, so long as you fulfill your end of the bargain. You may gain a Dark Pact Condition to retreat Doom by l."
+     "text": "Agents marked by the yellow sign deliver to you a grim missive. The dark within the Hyades will keep the enemy at bay, so long as you fulfill your end of the bargain. You may gain a Dark Pact Condition to retreat Doom by 1."
     },
     {
      "header": "Wilderness",
@@ -20349,7 +20349,7 @@
     },
     {
      "header": "Sea",
-     "text": "A solitary green spire rises from the ocean before the ship, and the sky darkens above you. No creatures of the deep accompany its arrival, but it resonates with a haunting, powerful melody, daring you to accept its fell blessing. You may gain a Corruption Condition to retreat Doom by l."
+     "text": "A solitary green spire rises from the ocean before the ship, and the sky darkens above you. No creatures of the deep accompany its arrival, but it resonates with a haunting, powerful melody, daring you to accept its fell blessing. You may gain a Corruption Condition to retreat Doom by 1."
     }
    ]
   },
@@ -20421,7 +20421,7 @@
    "sections": [
     {
      "header": "City",
-     "text": "A statue in the city square has an unusual inscription [LORE - 1]. If you pass, you intuit the glyphs to be empowered by temporal magic; gain this Clue and 1 Spell. If you fail, your curiosity alerts the Order of Rising Stars to the location of the glyphs; advance Doom by l."
+     "text": "A statue in the city square has an unusual inscription [LORE - 1]. If you pass, you intuit the glyphs to be empowered by temporal magic; gain this Clue and 1 Spell. If you fail, your curiosity alerts the Order of Rising Stars to the location of the glyphs; advance Doom by 1."
     },
     {
      "header": "Wilderness",
@@ -20889,7 +20889,7 @@
     },
     {
      "header": "Sea",
-     "text": "The water begins to churn and roil, and you must react quickly [OBSERVATION - 1]. If you pass, the swirling vortex finds no easy prey today; gain this Clue and retreat Doom by l. If you fail, the spectral visage of a monstrous creature emerges from beneath the sea; the Cthulhu Epic Monster ambushes you!"
+     "text": "The water begins to churn and roil, and you must react quickly [OBSERVATION - 1]. If you pass, the swirling vortex finds no easy prey today; gain this Clue and retreat Doom by 1. If you fail, the spectral visage of a monstrous creature emerges from beneath the sea; the Cthulhu Epic Monster ambushes you!"
     }
    ]
   },

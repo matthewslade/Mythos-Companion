@@ -1096,7 +1096,7 @@
    "expansions": [
     "CP"
    ],
-   "text": "A Miskatonic entomologist has heard rumors of an exotic species of beetle, previously only found along the Nile, that has been spotted in the campus hedgerows. Make a **Luck (-1)** **[2] check** to find it for her. If you pass, she gives you a $5 stipend for your work."
+   "text": "A Miskatonic entomologist has heard rumors of an exotic species of beetle, previously only found along the Nile, that has been spotted in the campus hedgerows. Make a **Luck (-1) [2] check** to find it for her. If you pass, she gives you a $5 stipend for your work."
   },
   {
    "id": "loc-administration-building-15",
@@ -1344,7 +1344,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "You are mistaken for an inmate. Doctor Mintz has the guards subdue you and conducts an experiment. Make a **Will (-1)** **[2] check** to discover the results. If you pass, the injections seem to increase your capacity for learning. Draw 1 Skill. If you fail, his memory drug fails miserably, resulting in lost knowledge. You must discard one of the following (your choice), if able: 4 Clue Tokens, or 2 Spells, or 1 Skill."
+   "text": "You are mistaken for an inmate. Doctor Mintz has the guards subdue you and conducts an experiment. Make a **Will (-1) [2] check** to discover the results. If you pass, the injections seem to increase your capacity for learning. Draw 1 Skill. If you fail, his memory drug fails miserably, resulting in lost knowledge. You must discard one of the following (your choice), if able: 4 Clue Tokens, or 2 Spells, or 1 Skill."
   },
   {
    "id": "loc-arkham-asylum-06",
@@ -1480,7 +1480,7 @@
    "expansions": [
     "DH"
    ],
-   "text": "Sneaking into the file room, you begin looking through the patient interviews for information that could be of use to you. If you pass a **Lore (-1)** **[2] check**, then roll a die and gain that many Clue Tokens. If you fail, nothing happens."
+   "text": "Sneaking into the file room, you begin looking through the patient interviews for information that could be of use to you. If you pass a **Lore (-1) [2] check**, then roll a die and gain that many Clue Tokens. If you fail, nothing happens."
   },
   {
    "id": "loc-arkham-asylum-23",
@@ -1956,7 +1956,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "This is a stick-up, see? Nobody move! Three men armed with tommy guns rob the bank while you're standing in line. Make a **Combat (-1) check**. If you pass, you drive them off. Nothing happens. If you fail, lose all of your money."
+   "text": "This is a stick-up, see? Nobody move! Three men armed with tommy guns rob the bank while you're standing in line. Make a **Fight (-1) check**. If you pass, you drive them off. Nothing happens. If you fail, lose all of your money."
   },
   {
    "id": "loc-bank-of-arkham-06",
@@ -2220,7 +2220,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "A young woman is examining the contents of a safe deposit box bequethed to her by her late mother. It is an ancient book written in a language she doesn't understand, and she asks you if you recognize the language. Make a **Lore (-1)** **[2] check**. If you pass, gain 2 Clue Tokens as you decipher the text."
+   "text": "A young woman is examining the contents of a safe deposit box bequethed to her by her late mother. It is an ancient book written in a language she doesn't understand, and she asks you if you recognize the language. Make a **Lore (-1) [2] check**. If you pass, gain 2 Clue Tokens as you decipher the text."
   },
   {
    "id": "loc-bank-of-arkham-39",
@@ -2816,7 +2816,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "Within the cave, you find the remains of a fire, candles, and other signs that a ritual has been attempted here. Whoever it was left some handwritten notes. Make a **Lore (+0)** **[2] check**. If you pass, gain 1 Spell."
+   "text": "Within the cave, you find the remains of a fire, candles, and other signs that a ritual has been attempted here. Whoever it was left some handwritten notes. Make a **Lore (+0) [2] check**. If you pass, gain 1 Spell."
   },
   {
    "id": "loc-black-cave-38",
@@ -3052,7 +3052,7 @@
     "MH",
     "DH"
    ],
-   "text": "Your feet sink into the soft mud. To your horror, you realize you are continuing to sink. Make a **Fight (-1)** **[2] check** to free yourself. If you pass, you are *Blessed* and feel as if you have a new love of life. If you fail, lose 1 Stamina and you are *delayed* waiting to be rescued."
+   "text": "Your feet sink into the soft mud. To your horror, you realize you are continuing to sink. Make a **Fight (-1) [2] check** to free yourself. If you pass, you are *Blessed* and feel as if you have a new love of life. If you fail, lose 1 Stamina and you are *delayed* waiting to be rescued."
   },
   {
    "id": "loc-cold-spring-glen-27",
@@ -3106,7 +3106,7 @@
     "MH",
     "KY"
    ],
-   "text": "The terrible words of The King in Yellow have been echoing in your ears ever since you left Arkham. But here, the gentle sound of the river helps soothe your mind. Make a **Will (-1)** **[2] check**. If you pass, you are *Blessed*"
+   "text": "The terrible words of The King in Yellow have been echoing in your ears ever since you left Arkham. But here, the gentle sound of the river helps soothe your mind. Make a **Will (-1) [2] check**. If you pass, you are *Blessed*"
   },
   {
    "id": "loc-cold-spring-glen-33",
@@ -3647,7 +3647,7 @@
    "expansions": [
     "KH"
    ],
-   "text": "A portrait half obscured behind a bookshelf catches your eye. There's something strange about it, but you're in no mood to move the shelf. On the other hand, you'd be a fool to ignore the gnawing feeling that the pattern-- which you can just barely make out-- might be important. Make a **Lore (-2)** **[2] check**. If you succeed, search the Unique Items deck for an Elder Sign."
+   "text": "A portrait half obscured behind a bookshelf catches your eye. There's something strange about it, but you're in no mood to move the shelf. On the other hand, you'd be a fool to ignore the gnawing feeling that the pattern-- which you can just barely make out-- might be important. Make a **Lore (-2) [2] check**. If you succeed, search the Unique Items deck for an Elder Sign."
   },
   {
    "id": "loc-curiositie-shoppe-30",
@@ -4192,7 +4192,7 @@
     "MH",
     "DH"
    ],
-   "text": "Sharp claws dig into your skin and pull you down into the water. Make a **Fight (+1)** **[2] check** to free yourself. If you pass, you make it back to the reef safe and sound. If you fail, you suffered grievous harm in the process. Draw an Injury card."
+   "text": "Sharp claws dig into your skin and pull you down into the water. Make a **Fight (+1) [2] check** to free yourself. If you pass, you make it back to the reef safe and sound. If you fail, you suffered grievous harm in the process. Draw an Injury card."
   },
   {
    "id": "loc-devil-reef-22",
@@ -4201,7 +4201,7 @@
     "MH",
     "IH"
    ],
-   "text": "As far as the eye can see in any direction, the water is churning with large, fish-like creatures. Make a **Will (+0)** **[2] check** to resist a state of pure panic. If you fail, lose 2 Sanity. If you pass, gain 2 Clue Tokens as you watch them head out to see."
+   "text": "As far as the eye can see in any direction, the water is churning with large, fish-like creatures. Make a **Will (+0) [2] check** to resist a state of pure panic. If you fail, lose 2 Sanity. If you pass, gain 2 Clue Tokens as you watch them head out to see."
   },
   {
    "id": "loc-devil-reef-23",
@@ -5185,7 +5185,7 @@
     "MH",
     "LT"
    ],
-   "text": "You force yourself to approach the alter of Dagon, despite your misgivings. You see that someone had tried to carve a warding symbol into the stone but did not manage to finish. Make a **Lore (-1)** **[2] check**. If you pass, you know how to complete the symbol. Search the Unique Item deck and take an Elder Sign card if one is available. If it is not available or if you fail the check, you are *Cursed*."
+   "text": "You force yourself to approach the alter of Dagon, despite your misgivings. You see that someone had tried to carve a warding symbol into the stone but did not manage to finish. Make a **Lore (-1) [2] check**. If you pass, you know how to complete the symbol. Search the Unique Item deck and take an Elder Sign card if one is available. If it is not available or if you fail the check, you are *Cursed*."
   },
   {
    "id": "loc-falcon-point-01",
@@ -5306,7 +5306,7 @@
     "MH",
     "BG"
    ],
-   "text": "Sailors from all over the world are at Falcon Point tonight. The many different languages are difficult to interpret but the wide variety of stories provide much information. Make a **Lore (-1)** **[2] check**. If you pass, gain 4 Clue Tokens."
+   "text": "Sailors from all over the world are at Falcon Point tonight. The many different languages are difficult to interpret but the wide variety of stories provide much information. Make a **Lore (-1) [2] check**. If you pass, gain 4 Clue Tokens."
   },
   {
    "id": "loc-falcon-point-16",
@@ -6501,7 +6501,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "Descending into a dark mausoleum, you discover a vampire rising to feed. You quickly find yourself fighting for your life. Make a **Combat (-2) check**. If you pass, you defeat the vampire, gaining 1 Clue Token and drawing 1 Unique Item. If you fail, roll a die and lose that much Stamina."
+   "text": "Descending into a dark mausoleum, you discover a vampire rising to feed. You quickly find yourself fighting for your life. Make a **Fight (-2) check**. If you pass, you defeat the vampire, gaining 1 Clue Token and drawing 1 Unique Item. If you fail, roll a die and lose that much Stamina."
   },
   {
    "id": "loc-graveyard-03",
@@ -6917,7 +6917,7 @@
    "expansions": [
     "KH"
    ],
-   "text": "You stumble across an excerpt from the Necronomicon in the archives. Pass a **Lore (-1)** **[2] check** to search the Spell deck and take a spell of your choice."
+   "text": "You stumble across an excerpt from the Necronomicon in the archives. Pass a **Lore (-1) [2] check** to search the Spell deck and take a spell of your choice."
   },
   {
    "id": "loc-hall-school-15",
@@ -7709,7 +7709,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "Pass a **Luck (-1)** **[2] check** to gain insight into a skill while studying the old volumes of books. Draw 1 Skill, but stay here next turn."
+   "text": "Pass a **Luck (-1) [2] check** to gain insight into a skill while studying the old volumes of books. Draw 1 Skill, but stay here next turn."
   },
   {
    "id": "loc-historical-society-02",
@@ -7989,7 +7989,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "A guest lecturer provides a lengthy but informative presentation about his explorations of ancient sites. You may make a **Lore (-1)** **[2] check** and stay here next turn. If you pass, gain 1 Skill."
+   "text": "A guest lecturer provides a lengthy but informative presentation about his explorations of ancient sites. You may make a **Lore (-1) [2] check** and stay here next turn. If you pass, gain 1 Skill."
   },
   {
    "id": "loc-historical-society-37",
@@ -9517,7 +9517,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "Someone left the door to the basement unlocked! There's an abundance of texts and artifacts hidden away down here, but most of it is useless to you. Make a **Luck (-1)** **[2] check**. If you pass, gain 1 Unique Item."
+   "text": "Someone left the door to the basement unlocked! There's an abundance of texts and artifacts hidden away down here, but most of it is useless to you. Make a **Luck (-1) [2] check**. If you pass, gain 1 Unique Item."
   },
   {
    "id": "loc-library-38",
@@ -10201,7 +10201,7 @@
    "expansions": [
     "KH"
    ],
-   "text": "Neil shows you a grey, warty thing in a jar. As you stare, it slowly opens it eyes and meets your gaze. You may pay $1 to pass a **Lore (-1)** **[2] check**. If you pass, you gain 2 Clue Tokens and draw 3 Spells, keeping 1 of them. If you don't pay or fail the check, nothing happens."
+   "text": "Neil shows you a grey, warty thing in a jar. As you stare, it slowly opens it eyes and meets your gaze. You may pay $1 to pass a **Lore (-1) [2] check**. If you pass, you gain 2 Clue Tokens and draw 3 Spells, keeping 1 of them. If you don't pay or fail the check, nothing happens."
   },
   {
    "id": "loc-neil-s-curiosity-shop-09",
@@ -11449,7 +11449,7 @@
    "expansions": [
     "CP"
    ],
-   "text": "A rowdy dock hand doesn't like the looks of you and challenges you to a fistfight. Make a **Fight (+1)** **[2] check**. If you pass, lose 1 Stamina, but you may search the Skill deck for the Fight card and take it. If you fail, the dock workers spit on you, and you run off. Lose 2 Stamina and place a Patrol marker on the street area of the Merchant District."
+   "text": "A rowdy dock hand doesn't like the looks of you and challenges you to a fistfight. Make a **Fight (+1) [2] check**. If you pass, lose 1 Stamina, but you may search the Skill deck for the Fight card and take it. If you fail, the dock workers spit on you, and you run off. Lose 2 Stamina and place a Patrol marker on the street area of the Merchant District."
   },
   {
    "id": "loc-river-docks-14",
@@ -11969,7 +11969,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "The staff is looking for exhausted or unhealthy subjects for medical experiments. If you are currently at less than your maximum Stamina, you may choose to gain $3. You must then make a **Luck (+0)** **[2] check**. If you succeed, you are restored to full Stamina. If you fail, lose 1 Stamina."
+   "text": "The staff is looking for exhausted or unhealthy subjects for medical experiments. If you are currently at less than your maximum Stamina, you may choose to gain $3. You must then make a **Luck (+0) [2] check**. If you succeed, you are restored to full Stamina. If you fail, lose 1 Stamina."
   },
   {
    "id": "loc-silver-twilight-lodge-01",
@@ -12925,7 +12925,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "The corpse you are examining isn't quite dead yet. It reaches out and grabs you by the throat. Lose 1 Sanity. Then, you must fight the corpse. If you pass a **Combat (-1) check**, you defeat it and gain 1 Clue Token. Otherwise, move to the street."
+   "text": "The corpse you are examining isn't quite dead yet. It reaches out and grabs you by the throat. Lose 1 Sanity. Then, you must fight the corpse. If you pass a **Fight (-1) check**, you defeat it and gain 1 Clue Token. Otherwise, move to the street."
   },
   {
    "id": "loc-st-mary-s-hospital-06",
@@ -14961,7 +14961,7 @@
    "expansions": [
     "KY"
    ],
-   "text": "Make a **Fight (-2)** **[2] check** as you help unload the set materials for \"The King in Yellow.\" If you pass, you are rewarded. Draw 1 Unique Item. If you roll only one success, you are given 1 Common Item. If you fail, you overdo it, and lose 1 Stamina."
+   "text": "Make a **Fight (-2) [2] check** as you help unload the set materials for \"The King in Yellow.\" If you pass, you are rewarded. Draw 1 Unique Item. If you roll only one success, you are given 1 Common Item. If you fail, you overdo it, and lose 1 Stamina."
   },
   {
    "id": "loc-train-station-34",
@@ -15009,7 +15009,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "You see a familiar face about to get on a train leaving Arkham. Draw an Ally card and then make a **Will (-2)** **[2] check**. If you pass, you've convinced your friend to stay and may take the Ally card. If you fail, the Ally card is returned to the box."
+   "text": "You see a familiar face about to get on a train leaving Arkham. Draw an Ally card and then make a **Will (-2) [2] check**. If you pass, you've convinced your friend to stay and may take the Ally card. If you fail, the Ally card is returned to the box."
   },
   {
    "id": "loc-unvisited-isle-01",
@@ -15745,7 +15745,7 @@
    "expansions": [
     "DH"
    ],
-   "text": "You notice that the back door of the Whateley home is open. If you go inside, make a **Luck (-1)** **[2] check**. If you pass, you learn the secret of the Whateley gold, and you may search the Spell deck for an Alchemical Process card and take it. If you fail, Lavinia Whateley catches you and Curses you."
+   "text": "You notice that the back door of the Whateley home is open. If you go inside, make a **Luck (-1) [2] check**. If you pass, you learn the secret of the Whateley gold, and you may search the Spell deck for an Alchemical Process card and take it. If you fail, Lavinia Whateley catches you and Curses you."
   },
   {
    "id": "loc-whateley-farm-15",
@@ -16933,7 +16933,7 @@
    "expansions": [
     "IH"
    ],
-   "text": "You've got the proof you need, now all you have to do is escape this terrible place! Pass a **Luck (-1)** **[2] check** to move to Falcon Point, then remove all tokens from both the Feds Raid Innsmouth and the Deep Ones Rising tracks. In addition, remove 1 doom token from the doom track. If you fail, you are **devoured**."
+   "text": "You've got the proof you need, now all you have to do is escape this terrible place! Pass a **Luck (-1) [2] check** to move to Falcon Point, then remove all tokens from both the Feds Raid Innsmouth and the Deep Ones Rising tracks. In addition, remove 1 doom token from the doom track. If you fail, you are **devoured**."
   },
   {
    "id": "loc-y-ha-nthlei-15",
@@ -20273,7 +20273,7 @@
    "expansions": [
     "IH"
    ],
-   "text": "You come across a small bridge across a ravine, guarded by a knight in rusted armor riding a zebra. He demands either a story or rare knowledge to let you pass.\n\nYou may spend 1 gate trophy, 5 toughness worth of monster trophies, or discard 1 Skill to pass. If you do so, you are *Blessed* and return to Arkham.\n\nIf you decline to pay the toll, the rusted knight attacks you. Pass a Combat (-3) [3] check to defeat him and cross the bridge, returning to Arkham. If you fail, he knocks you into the ravine and you are *lost in time and space*."
+   "text": "You come across a small bridge across a ravine, guarded by a knight in rusted armor riding a zebra. He demands either a story or rare knowledge to let you pass.\n\nYou may spend 1 gate trophy, 5 toughness worth of monster trophies, or discard 1 Skill to pass. If you do so, you are *Blessed* and return to Arkham.\n\nIf you decline to pay the toll, the rusted knight attacks you. Pass a **Fight (-3) [3] check** to defeat him and cross the bridge, returning to Arkham. If you fail, he knocks you into the ravine and you are *lost in time and space*."
   },
   {
    "id": "ow-the-dreamlands-61",
@@ -21209,7 +21209,7 @@
    "expansions": [
     "LT"
    ],
-   "text": "The natives capture you for medical experiments! Make a **'Luck (-3) check** to escape. If you fail, exchange your current Stamina and Sanity totals (any Stamina or Sanity in excess of your maximums are lost)."
+   "text": "The natives capture you for medical experiments! Make a **Luck (-3) check** to escape. If you fail, exchange your current Stamina and Sanity totals (any Stamina or Sanity in excess of your maximums are lost)."
   },
   {
    "id": "ow-yuggoth-45",

@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
 import com.m42.companion.R
+import com.m42.companion.ui.components.Tone
 
 /** The typeface the Eldritch Companion used for card headings. */
 val Caslon = FontFamily(Font(R.font.caslon_antique))
@@ -63,33 +64,95 @@ private val DarkColors = darkColorScheme(
     outlineVariant = Color(0xFF43473F),
 )
 
-/** Colours that are not part of the Material scheme: the card itself and the Arkham resource highlights. */
+/** Colours that are not part of the Material scheme: the card itself and the highlighted game terms. */
 @Immutable
 data class CardColors(
     val paper: Color,
     val ink: Color,
     val shaded: Color,
-    val stamina: Color,
-    val sanity: Color,
-    val clue: Color,
+    private val tones: Map<Tone, Color>,
+) {
+    fun tone(tone: Tone): Color = tones.getValue(tone)
+}
+
+/**
+ * Term colours. Skills follow the Eldritch Horror investigator sheet (Lore purple, Influence orange,
+ * Observation green, Strength red, Will blue); tokens follow their printed colours where there is one.
+ */
+private val LightTones = mapOf(
+    Tone.HEALTH to Color(0xFFC62828),
+    Tone.SANITY to Color(0xFF0D6FB8),
+    Tone.CLUE to Color(0xFF2E7D32),
+    Tone.FOCUS to Color(0xFFB26A00),
+    Tone.MONEY to Color(0xFF8A6D00),
+    Tone.LORE to Color(0xFF7B3FA0),
+    Tone.INFLUENCE to Color(0xFFC25400),
+    Tone.OBSERVATION to Color(0xFF1B7A45),
+    Tone.STRENGTH to Color(0xFFB3261E),
+    Tone.WILL to Color(0xFF1F5FBF),
+    Tone.SPEED to Color(0xFF00796B),
+    Tone.SNEAK to Color(0xFF4E5B6E),
+    Tone.LUCK to Color(0xFF9A7000),
+    Tone.THREAT to Color(0xFFA0153E),
+    Tone.DOOM to Color(0xFF8E1B1B),
+    Tone.ELDRITCH to Color(0xFF5E2A84),
+    Tone.OMEN to Color(0xFF424242),
+    Tone.GATE to Color(0xFF00727F),
+    Tone.MYSTERY to Color(0xFF33691E),
+    Tone.RUMOR to Color(0xFF006C80),
+    Tone.CONDITION to Color(0xFF8E2463),
+    Tone.BLESSED to Color(0xFF9A7400),
+    Tone.CURSED to Color(0xFF4A148C),
+    Tone.STATUS to Color(0xFFA0522D),
+    Tone.LOST to Color(0xFF283593),
+    Tone.DANGER to Color(0xFF7F1D1D),
+    Tone.POSSESSION to Color(0xFF8D5A2B),
+    Tone.TRAIT to Color(0xFF6D5D4B),
+)
+
+private val DarkTones = mapOf(
+    Tone.HEALTH to Color(0xFFFF6E6C),
+    Tone.SANITY to Color(0xFF4FC3FF),
+    Tone.CLUE to Color(0xFF6EE07A),
+    Tone.FOCUS to Color(0xFFFFC046),
+    Tone.MONEY to Color(0xFFF2CC4B),
+    Tone.LORE to Color(0xFFCE9CF2),
+    Tone.INFLUENCE to Color(0xFFFFA45C),
+    Tone.OBSERVATION to Color(0xFF5FD68F),
+    Tone.STRENGTH to Color(0xFFFF7A6E),
+    Tone.WILL to Color(0xFF82B4FF),
+    Tone.SPEED to Color(0xFF4DD0C4),
+    Tone.SNEAK to Color(0xFFB0BDD0),
+    Tone.LUCK to Color(0xFFE8C04A),
+    Tone.THREAT to Color(0xFFFF6B8E),
+    Tone.DOOM to Color(0xFFFF8A80),
+    Tone.ELDRITCH to Color(0xFFC39BE8),
+    Tone.OMEN to Color(0xFFD0D0D0),
+    Tone.GATE to Color(0xFF5FD3DE),
+    Tone.MYSTERY to Color(0xFFA5D66C),
+    Tone.RUMOR to Color(0xFF4FC8E0),
+    Tone.CONDITION to Color(0xFFF48FC4),
+    Tone.BLESSED to Color(0xFFFFD54F),
+    Tone.CURSED to Color(0xFFB39DDB),
+    Tone.STATUS to Color(0xFFF0A070),
+    Tone.LOST to Color(0xFF9FA8DA),
+    Tone.DANGER to Color(0xFFFF8A80),
+    Tone.POSSESSION to Color(0xFFE0A96D),
+    Tone.TRAIT to Color(0xFFC7B59C),
 )
 
 private val LightCard = CardColors(
     paper = Color(0xFFFBF3E0),
     ink = Color(0xFF1F1A12),
     shaded = Color(0x33000000),
-    stamina = Color(0xFFC62828),
-    sanity = Color(0xFF0D6FB8),
-    clue = Color(0xFF2E7D32),
+    tones = LightTones,
 )
 
 private val DarkCard = CardColors(
     paper = Color(0xFF26231D),
     ink = Color(0xFFEDE6D6),
     shaded = Color(0x66000000),
-    stamina = Color(0xFFFF6E6C),
-    sanity = Color(0xFF4FC3FF),
-    clue = Color(0xFF6EE07A),
+    tones = DarkTones,
 )
 
 val LocalCardColors = staticCompositionLocalOf { LightCard }

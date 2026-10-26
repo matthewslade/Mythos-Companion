@@ -13,7 +13,16 @@ Both games use the same small markup, which `ui/components/Markup.kt` renders:
 | `[LORE - 1]` | Eldritch skill test, always shown bold |
 | line break (`\n`) | a new line; tables of results use one line per row |
 
-The app colours Arkham resources itself, so the data needs no colour markup: Stamina is red, Sanity is blue and Clue Tokens are green.
+The app also colours game terms itself and puts a small icon in front of each one, so the data needs no colour markup:
+- resources: Health/Stamina, Sanity, Clues, Focus and money;
+- skill tests: the Eldritch skills use the investigator sheet colours (Lore purple, Influence orange, Observation green, Strength red, Will blue);
+- threats: Doom, Eldritch tokens, the Omen, Gates, Monsters and the terror level;
+- Conditions and special cards, Blessed and Cursed;
+- statuses such as Delayed, Detained, Lost in Time and Space and devoured;
+- things you gain, such as Unique Items, Spells, Allies and Tickets;
+- Eldritch card traits (RELIC, INCANTATION and so on), shown as small capitals.
+
+The rules live in `ui/components/Terms.kt`. The on-device test `MarkupScreenshots` renders a real example card for every term kind in light and dark mode.
 
 ## `eldritch.json`
 
@@ -23,6 +32,7 @@ The app colours Arkham resources itself, so the data needs no colour markup: Sta
 ```
 
 - Every card has three sections (top, middle and bottom), as in the Eldritch Companion app.
+- **Split decks:** the app draws each section of a location, General or Research card as its own encounter, as the Arkham side does, so the Americas cards become separate Arkham, San Francisco and Buenos Aires decks. The split happens when a game is built (`EldritchDecks.SPLIT`), so the data keeps the printed cards. A split encounter's id is the card id plus its section number, e.g. `A1#2` is the San Francisco part of card `A1`.
 - **Named cards** (gates, expeditions, Mystic Ruins, Dream-Quest, Special, Disaster and Devastation) also carry a `title`. Their first section is the lead-in, followed by `Pass` and `Fail`; Disaster cards have no headers.
 - **Research and Special** cards carry an `ancientOne`, and only enter the game for that Ancient One.
 - **Source:** converted from the Eldritch Companion's `assets/cards.xml` (1,086 cards, Base through Masks of Nyarlathotep). The only change was making skill-test notation consistent (`[LORE – 1]` and `[LORE-1]` became `[LORE - 1]`).

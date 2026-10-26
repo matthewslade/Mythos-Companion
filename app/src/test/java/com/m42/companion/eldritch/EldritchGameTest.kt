@@ -2,6 +2,7 @@ package com.m42.companion.eldritch
 
 import com.m42.companion.TestData
 import com.m42.companion.engine.DISCARD_PILE
+import com.m42.companion.engine.DeckState
 import com.m42.companion.engine.Encountered
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -57,9 +58,11 @@ class EldritchGameTest {
     @Test
     fun `research and special decks only hold the chosen ancient one's cards`() {
         val session = game.newSession(config(EldritchExpansion.BASE, EldritchExpansion.FORSAKEN_LORE, ao = "yog-sothoth"), random)
-        val research = session.state.deck(EldritchDecks.RESEARCH).map(game::card)
-        assertEquals(24, research.size)
-        assertTrue(research.all { it.ancientOne == "yog-sothoth" })
+        for (part in EldritchDecks.parts(EldritchDecks.RESEARCH)) {
+            val research = session.state.deck(part).map(game::card)
+            assertEquals(24, research.size)
+            assertTrue(research.all { it.ancientOne == "yog-sothoth" })
+        }
         assertEquals(8, session.state.deck(EldritchDecks.SPECIAL_1).size) // 6 base + 2 Forsaken Lore
         assertEquals("The Key and the Gate", game.specialDeckName(session, EldritchDecks.SPECIAL_1))
         assertEquals("Void Between Worlds", game.specialDeckName(session, EldritchDecks.SPECIAL_2))
@@ -69,7 +72,7 @@ class EldritchGameTest {
     @Test
     fun `expansion decks merge into the base decks`() {
         val session = game.newSession(config(*EldritchExpansion.entries.toTypedArray(), ao = "azathoth"), random)
-        assertEquals(48, session.state.deck(EldritchDecks.AMERICAS).size)
+        assertEquals(48, session.state.deck(EldritchDecks.part(EldritchDecks.AMERICAS, 0)).size)
         assertEquals(72, session.state.deck(EldritchDecks.GATE).size)
         assertEquals(40, session.state.deck(EldritchDecks.MYSTIC_RUINS).size)
         assertTrue(session.state.hasDeck(EldritchDecks.DISASTER))
@@ -121,14 +124,46 @@ class EldritchGameTest {
     }
 
     @Test
+    fun `three-part cards are drawn as one encounter per part`() {
+        val session = game.newSession(config(EldritchExpansion.BASE, ao = "cthulhu"), random)
+        assertFalse(session.state.hasDeck(EldritchDecks.AMERICAS))
+        assertEquals(listOf("Arkham", "San Francisco", "Buenos Aires"), EldritchDecks.parts(EldritchDecks.AMERICAS).map(game::partName))
+        val sanFrancisco = EldritchDecks.part(EldritchDecks.AMERICAS, 1)
+        val (opened, gallery) = game.open(session, sanFrancisco, random)
+        val face = gallery!!.faces.first()
+        assertEquals("San Francisco", face.pageTitle)
+        assertEquals("Americas", face.tag)
+        assertEquals(listOf("San Francisco"), face.sections.map { it.header })
+        assertEquals(game.card(face.cardId).sections[1], face.sections.single())
+        assertEquals(setOf(Encountered.TOP), face.selectable)
+        // Resolving San Francisco leaves the same card's Arkham encounter in the Arkham deck.
+        val after = game.resolve(opened, face, Encountered.TOP)
+        assertEquals(7, after.state.deck(sanFrancisco).size)
+        assertTrue(EldritchDecks.encounterId(face.cardId.substringBefore('#'), 0) in after.state.deck(EldritchDecks.part(EldritchDecks.AMERICAS, 0)))
+        assertEquals("Discard – San Francisco", game.open(after, DISCARD_PILE, random).second!!.faces.single().pageTitle)
+        assertEquals("Research – City", game.deckName(after, EldritchDecks.part(EldritchDecks.RESEARCH, 0)))
+    }
+
+    @Test
+    fun `games saved by version 1 cannot be continued`() {
+        val v1 = EldritchSession(
+            config(EldritchExpansion.BASE, ao = "cthulhu"),
+            DeckState(mapOf("americas" to listOf("A1", "A2"), "gate" to listOf("Ga1"))),
+        )
+        assertFalse(game.isValid(v1))
+        assertTrue(game.isValid(game.newSession(v1.config, random)))
+    }
+
+    @Test
     fun `an exhausted deck refills from the discard pile when opened`() {
         var session = game.newSession(config(EldritchExpansion.BASE, ao = "cthulhu"), random)
+        val arkham = EldritchDecks.part(EldritchDecks.AMERICAS, 0)
         repeat(8) {
-            val (s, g) = game.open(session, EldritchDecks.AMERICAS, random)
+            val (s, g) = game.open(session, arkham, random)
             session = game.resolve(s, g!!.faces.first(), Encountered.TOP)
         }
-        assertTrue(session.state.deck(EldritchDecks.AMERICAS).isEmpty())
-        val (refilled, gallery) = game.open(session, EldritchDecks.AMERICAS, random)
+        assertTrue(session.state.deck(arkham).isEmpty())
+        val (refilled, gallery) = game.open(session, arkham, random)
         assertEquals(8, gallery!!.faces.size)
         assertTrue(refilled.state.discard.isEmpty())
     }
