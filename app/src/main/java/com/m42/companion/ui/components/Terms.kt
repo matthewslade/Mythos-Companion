@@ -66,7 +66,7 @@ enum class TermKind(val label: String, val tone: Tone, val icon: ImageVector?) {
     WILL("Will", Tone.WILL, Icons.Filled.Shield),
     SPEED("Speed", Tone.SPEED, Icons.AutoMirrored.Filled.DirectionsRun),
     SNEAK("Sneak", Tone.SNEAK, Icons.Filled.VisibilityOff),
-    FIGHT("Fight", Tone.STRENGTH, Icons.Filled.SportsMma),
+    FIGHT("Fight / Combat", Tone.STRENGTH, Icons.Filled.SportsMma),
     LUCK("Luck", Tone.LUCK, Icons.Filled.Casino),
 
     // Threats
@@ -129,7 +129,7 @@ private val eldritchSkills = mapOf(
     "STRENGTH" to TermKind.STRENGTH, "WILL" to TermKind.WILL,
 )
 private val arkhamSkills = mapOf(
-    "Speed" to TermKind.SPEED, "Sneak" to TermKind.SNEAK, "Fight" to TermKind.FIGHT,
+    "Speed" to TermKind.SPEED, "Sneak" to TermKind.SNEAK, "Fight" to TermKind.FIGHT, "Combat" to TermKind.FIGHT,
     "Will" to TermKind.WILL, "Lore" to TermKind.LORE, "Luck" to TermKind.LUCK,
 )
 
@@ -144,7 +144,7 @@ private const val ARKHAM_SPECIAL_CARDS = "Retainer|Exhibit Items?|Madness|Injury
 val TermRules: List<TermRule> = listOf(
     // Skill tests
     TermRule(ELDRITCH, """\[(LORE|INFLUENCE|OBSERVATION|STRENGTH|WILL)(?: [+-] \d)?]""") { eldritchSkills.getValue(it.groupValues[1]) },
-    TermRule(ARKHAM, """\b(Speed|Sneak|Fight|Will|Lore|Luck) \([+-]\d\)(?: \[\d])?(?: check)?""") { arkhamSkills.getValue(it.groupValues[1]) },
+    TermRule(ARKHAM, """\b(Speed|Sneak|Fight|Combat|Will|Lore|Luck) \([+-]\d\)(?: \[\d])?(?: check)?""") { arkhamSkills.getValue(it.groupValues[1]) },
 
     // Conditions, most specific first
     TermRule(BOTH, """\bBlessed Condition\b""", TermKind.BLESSED),

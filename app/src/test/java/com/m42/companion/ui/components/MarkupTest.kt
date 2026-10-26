@@ -53,6 +53,8 @@ class MarkupTest {
             listOf("Luck (-1) [2] check" to TermKind.LUCK, "Fight (+0) check" to TermKind.FIGHT),
             terms("Make a Luck (-1) [2] check. You will need to pass a Fight (+0) check.", TextStyle.ARKHAM),
         )
+        // Combat checks are Fight checks with weapon bonuses.
+        assertEquals(listOf("Combat (-1) check" to TermKind.FIGHT), terms("Make a Combat (-1) check.", TextStyle.ARKHAM))
     }
 
     @Test

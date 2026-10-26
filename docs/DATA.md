@@ -60,32 +60,44 @@ The old `ae.tsv` / `oe.tsv` files were converted with these fixes:
   - `GW` became `BG`, at Hall School.
   - `DH|DH`, and `DH|xx` where `MH|xx` was meant, at Gardners' Place, Whateley Farm and Bishop's Brook Bridge.
   - An `MH` card with no second code at 607 Water St. was given Kingsport.
-- **Cards relabelled from King in Yellow to Curse of the Dark Pharaoh:** seven cards with Egyptian, Dark Pharaoh, Patrol-marker or museum themes, at Arkham Asylum and the Administration Building.
+- **Ye Olde Magick Shoppe:** three cards had lost their expansion code; checked against the physical cards:
+  - "Ah, there you are. That item you ordered…" is King in Yellow.
+  - "A famous occultist is in town giving a lecture…" is Black Goat of the Woods.
+  - "A group of concerned citizens have come to harangue…" is Innsmouth Horror.
+- **Curse of the Dark Pharaoh editions:** the data mixed the original and revised editions. Three original-edition cards that use *Barred* were removed, keeping their revised Patrol-marker twins (checked against the revised edition): the Administration Building card that had been tagged as the base game, and one card each at the Graveyard and Arkham Asylum.
+- **Bank of Arkham:** the seizure encounter had been tagged as the base game; it is Curse of the Dark Pharaoh (checked against the physical cards).
+- **Darke's Carnival:** the "confused old man" encounter is not in the Dunwich Horror deck (checked against the physical cards). It was moved to Miskatonic Horror + Black Goat, the one card that location was missing; the Arkham Horror wiki confirms Miskatonic Horror + Black Goat.
+- **Congregational Hospital:** the "pill to help you relax" encounter is not in the Kingsport Horror deck (checked against the physical cards); the Arkham Horror wiki lists it as Miskatonic Horror with the Kingsport and Innsmouth icons, so it now needs Miskatonic Horror, Kingsport and Innsmouth.
+- **Cards relabelled from King in Yellow to Curse of the Dark Pharaoh:** seven cards with Egyptian, Dark Pharaoh, Patrol-marker or museum themes, at Arkham Asylum and the Administration Building. Two more Administration Building cards (the research assistant and the Civil War thesis encounters) were confirmed as Dark Pharaoh against the physical cards. The Arkham Asylum "ancient Sumerian" encounter was also confirmed as Dark Pharaoh.
 - **Text repairs:**
   - **Field separators:** a `%` inside the Inner Sanctum text had split the row ("1 Clue Token = $2").
   - **Markup:** stray `[[` markup removed, and spaces restored where the old HTML had glued words together ("Clue Tokenyou").
-  - **Typos:** "THe", "lf", "tothe", "speacks", "Antartica", "pedistals", "heiroglyphics", "posses", "over to the Causeway" and "Combat (-1) check" (the game calls it Fight).
+  - **Typos:** "THe", "lf", "tothe", "speacks", "Antartica", "pedistals", "heiroglyphics", "posses", "over to the Causeway".
 
-### Please check against the physical cards
+### Verified against the Arkham Horror wiki
 
-Most locations follow a very regular pattern, so the places below stand out. Each needs someone to look at the real cards. Card ids are shown in the app, at the bottom right of every card.
+Every location's encounters were compared, card by card, with the encounter tables on the [Arkham Horror 2nd Edition wiki](https://arkham-horror-second-edition.fandom.com/). After the fixes above, all 57 locations agree with it. The wiki also showed three more fixes:
+- **Devil Reef:** "You spend the entire night out on the reef…" is Miskatonic Horror + Innsmouth, not Innsmouth.
+- **Combat checks:** three location cards and one Dreamlands card really do say "Combat check" (a Fight check that adds weapon bonuses). The conversion had wrongly changed them to Fight; they have been restored, and the app colours them like Fight checks.
+- **First National Grocery:** has 14 Innsmouth cards and no Miskatonic Horror cards, the same as the wiki.
 
-1. **Ye Olde Magick Shoppe:** the original data had lost the expansion of three cards. Each one has a `note` in the JSON. The location was missing exactly one Black Goat, one Innsmouth and one King in Yellow card, so the three were assigned one each. Which card belongs to which expansion is a guess:
-   - "Ah, there you are. That item you ordered…" is set to **BG**.
-   - "A famous occultist is in town giving a lecture…" is set to **IH**.
-   - "A group of concerned citizens have come to harangue…" is set to **KY**.
-2. **Administration Building:**
-   - It has 8 base cards, where most Arkham locations have 7. Two of them are the identical "monograph" encounter; check whether the base game really has it twice.
-   - It also has 6 King in Yellow and 3 Curse of the Dark Pharaoh cards, against the usual 4 and 5.
-3. **Bank of Arkham:** 8 base cards and 4 Dark Pharaoh cards, against the usual 7 and 5. One "base" card may belong to Curse of the Dark Pharaoh. A likely candidate is the bank robbery card, which used to say "Combat (-1) check".
-4. **Arkham Asylum:** 5 King in Yellow cards against the usual 4.
-5. **Graveyard:** 6 Dark Pharaoh cards against the usual 5. The revised edition of Curse of the Dark Pharaoh may account for this.
-6. **Expansion-board locations with one card in the wrong place:**
-   - Darke's Carnival: 15 Dunwich and 1 MH+Black Goat card; 14 and 2 expected.
-   - Congregational Hospital: 15 Kingsport and 1 MH+Innsmouth card; 14 and 2 expected.
-   - Devil Reef: 15 Innsmouth and 7 MH+Innsmouth cards; 14 and 8 expected.
-7. **First National Grocery:** has no Miskatonic Horror cards at all; 20 would be expected. They were missing from the 2012 data and can be added if you have them.
-8. **Other Worlds:**
-   - The Plateau of Leng and Great Hall of Celeano have no Miskatonic Horror entries, while the other base worlds have four each.
-   - Celeano also has 3 Dunwich entries where the other worlds have 4.
-   - Lost Carcosa has one Curse of the Dark Pharaoh entry.
+The wiki also lists 18 cards that are only in the original edition of Curse of the Dark Pharaoh. They are left out, because the revised edition is the one in use.
+
+### Other Worlds and First National Grocery: imported from the Arkham Companion app
+
+The wiki has no text for Other World encounters, so the gate deck was compared with the card database of the original **Arkham Companion** Android app ([DeckardSix/arkham-companion](https://github.com/DeckardSix/arkham-companion)). That database stores every physical gate card with its expansions, gate colours and encounters, and has the same card counts as our verified data at 56 of the 57 locations. Using it:
+
+- **Added 162 Other World encounters:**
+  - mostly Miskatonic Horror gate cards, some of which need three expansions (e.g. Miskatonic Horror, Dunwich and Kingsport);
+  - the 16 Innsmouth Horror "Other" entries;
+  - the revised Curse of the Dark Pharaoh cards.
+- **Removed 28 original-edition Curse of the Dark Pharaoh entries.** Their revised replacements are among the additions.
+- **Two entries retagged from the database:** Lost Carcosa's "glass case" encounter is Miskatonic Horror + Curse of the Dark Pharaoh, and "Noatalba is performing a ritual…" is Miskatonic Horror + Curse of the Dark Pharaoh + Kingsport.
+- **Duplicates removed:**
+  - another misfiled Great Hall of Celeano card that had been filed under Another Time ("An almost-overlooked fragment of text…");
+  - a duplicate of Plateau of Leng's "icy winds" encounter.
+- **Added First National Grocery's 20 Miskatonic Horror cards.** These were missing from both the 2012 data and the wiki.
+
+Every imported or retagged card has a `note` saying so, which makes it easy to spot-check against the physical cards. Every world now follows the same regular pattern, and the Dunwich and Kingsport worlds have 32 encounters each.
+
+There are no open questions about the card data at the moment.

@@ -128,7 +128,7 @@ fun ArkhamBoardScreen(vm: ArkhamViewModel, onBack: () -> Unit, onOpenGallery: ()
     GameBoard(
         title = "Arkham Horror",
         items = arkhamBoardItems(g, s),
-        minButtonWidth = 168.dp,
+        minButtonWidth = 148.dp,
         gallery = gallery,
         galleryActions = galleryActions(vm),
         snackbar = snackbar,
@@ -149,6 +149,18 @@ fun ArkhamBoardScreen(vm: ArkhamViewModel, onBack: () -> Unit, onOpenGallery: ()
 }
 
 private object ArkhamColors {
+    /** Card back colours of the Arkham neighbourhood location decks. */
+    val neighbourhoods = mapOf(
+        "Northside" to Color(0xFFC96D2D),
+        "Downtown" to Color(0xFFA8A8A3),
+        "Easttown" to Color(0xFF555751),
+        "Merchant District" to Color(0xFF2F8768),
+        "Rivertown" to Color(0xFF76528E),
+        "Miskatonic U." to Color(0xFFD9AA32),
+        "French Hill" to Color(0xFF187FC1),
+        "Uptown" to Color(0xFFAA352C),
+        "Southside" to Color(0xFF79553C),
+    )
     val boards = mapOf(
         "AH" to Color(0xFF2E5E3E),
         "DH" to Color(0xFF6D4C2F),
@@ -169,7 +181,8 @@ private fun arkhamBoardItems(game: ArkhamGame, session: ArkhamSession): List<Boa
     for (group in game.locationGroups(session.config)) {
         add(BoardItem.Heading(group.title))
         for (location in group.locations) {
-            add(BoardItem.Deck(ArkhamDecks.location(location.name), location.name, color = ArkhamColors.boards.getValue(location.board)))
+            val color = location.neighbourhood?.let(ArkhamColors.neighbourhoods::get) ?: ArkhamColors.boards.getValue(location.board)
+            add(BoardItem.Deck(ArkhamDecks.location(location.name), location.name, color = color))
         }
     }
     add(BoardItem.Heading("Other Worlds"))

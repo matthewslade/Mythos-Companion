@@ -67,6 +67,8 @@ data class OtherWorldEncounter(
     val colour: GateColour? = null,
     val expansions: List<String>,
     val text: String,
+    /** Where a card came from or what is uncertain about it; not shown in the app. */
+    val note: String? = null,
 )
 
 object CardDataParser {

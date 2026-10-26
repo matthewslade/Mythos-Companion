@@ -987,14 +987,6 @@
    "text": "You are startled to discover a door you never noticed before leading down to the cellar. Move to the first area of the Underworld, have an encounter there, and then return here immediately."
   },
   {
-   "id": "loc-administration-building-01",
-   "location": "Administration Building",
-   "expansions": [
-    "AH"
-   ],
-   "text": "\"You there. Friend. You are from this town, yes?\" A poor foreign student wants to enroll at the university, and asks if he can use your name because tuition is cheaper for local residents. If you agree, gain $10, but you are Barred from Miskatonic U."
-  },
-  {
    "id": "loc-administration-building-02",
    "location": "Administration Building",
    "expansions": [
@@ -1262,7 +1254,7 @@
    "id": "loc-administration-building-35",
    "location": "Administration Building",
    "expansions": [
-    "KY"
+    "CP"
    ],
    "text": "You meet a research assistant who is quite taken with you. Roll a die. You gain that many free movement points, to be used immediately on any Tome or other item that requires an expenditure of movement points to use."
   },
@@ -1270,7 +1262,7 @@
    "id": "loc-administration-building-36",
    "location": "Administration Building",
    "expansions": [
-    "KY"
+    "CP"
    ],
    "text": "You overhear a history student complaining to his friend about a lack of materials for his Civil War thesis. If you attempt to enlighten him, he pays $1 for each Clue Token you are willing to discard. Also, if you have the Cavalry Saber, Ancient Tome, or Old Journal Common Items, he will pay you double the listed cost for them."
   },
@@ -1409,14 +1401,6 @@
     "CP"
    ],
    "text": "The inmates begin to chant in unison, screaming about the \"black Kem of Re and Amen, Isis, and Osiris!\" It nearly drives you mad - but that which doesn't kill you only makes you stronger. If your Will is 1 or lower, you may search the Skill deck and take the Will card."
-  },
-  {
-   "id": "loc-arkham-asylum-14",
-   "location": "Arkham Asylum",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The screams of the insane drive you out of the Asylum... but then you realize that you can still hear them in your mind, praising the coming of the Dark Pharaoh! Take the Psychic card, but you cannot stand to be near the Asylum: You are Barred from Downtown."
   },
   {
    "id": "loc-arkham-asylum-15",
@@ -1566,7 +1550,7 @@
    "id": "loc-arkham-asylum-33",
    "location": "Arkham Asylum",
    "expansions": [
-    "KY"
+    "CP"
    ],
    "text": "All of the Asylum's patients begin speaking in the same strange tongue at once. Make a **Lore (-1) check**. If you pass, gain 1 Clue Token as you realize that they're all speaking ancient Sumerian, a language that only a few scholars in the world know!"
   },
@@ -1956,7 +1940,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "This is a stick-up, see? Nobody move! Three men armed with tommy guns rob the bank while you're standing in line. Make a **Fight (-1) check**. If you pass, you drive them off. Nothing happens. If you fail, lose all of your money."
+   "text": "This is a stick-up, see? Nobody move! Three men armed with tommy guns rob the bank while you're standing in line. Make a **Combat (-1) check**. If you pass, you drive them off. Nothing happens. If you fail, lose all of your money."
   },
   {
    "id": "loc-bank-of-arkham-06",
@@ -1970,7 +1954,7 @@
    "id": "loc-bank-of-arkham-07",
    "location": "Bank of Arkham",
    "expansions": [
-    "AH"
+    "CP"
    ],
    "text": "You see a customer going into seizures. If you want to try to help, make a **Fight (-2) check** to restrain him and keep him from hurting himself or a **Lore (-2) check** to correctly sedate him. If you fail, lose 2 Stamina as he lashes out. If you pass, the convulsions subside and a nun rushes to you side, saying, \"Bless you, good sir, for helping.\" You are *Blessed*."
   },
@@ -3242,7 +3226,8 @@
    "id": "loc-congregational-hospital-15",
    "location": "Congregational Hospital",
    "expansions": [
-    "KH"
+    "MH",
+    "IH"
    ],
    "text": "Your doctors give you a pill to help you relax. Move to the first are of the Dreamlands, have an encounter there, and then immediately return."
   },
@@ -3837,9 +3822,11 @@
    "id": "loc-darke-s-carnival-14",
    "location": "Darke's Carnival",
    "expansions": [
-    "DH"
+    "MH",
+    "BG"
    ],
-   "text": "You see an apparently confused old man, asking strangers if they've seen his mommy and daddy. To help him, you find the proprietor. Mr. Darke tells you that he'll take care of it and then asks the elderly man if he's learned his lesson about little boys sneaking where they're not suppose to be. Lose 1 Sanity and gain 1 Clue Token."
+   "text": "You see an apparently confused old man, asking strangers if they've seen his mommy and daddy. To help him, you find the proprietor. Mr. Darke tells you that he'll take care of it and then asks the elderly man if he's learned his lesson about little boys sneaking where they're not suppose to be. Lose 1 Sanity and gain 1 Clue Token.",
+   "note": "Not in the Dunwich Horror deck (checked against the physical cards); the Arkham Horror wiki confirms Miskatonic Horror + Black Goat."
   },
   {
    "id": "loc-darke-s-carnival-15",
@@ -4136,6 +4123,7 @@
    "id": "loc-devil-reef-15",
    "location": "Devil Reef",
    "expansions": [
+    "MH",
     "IH"
    ],
    "text": "You spend the entire night out on the reef shivering but unharmed. Nothing happens."
@@ -6501,7 +6489,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "Descending into a dark mausoleum, you discover a vampire rising to feed. You quickly find yourself fighting for your life. Make a **Fight (-2) check**. If you pass, you defeat the vampire, gaining 1 Clue Token and drawing 1 Unique Item. If you fail, roll a die and lose that much Stamina."
+   "text": "Descending into a dark mausoleum, you discover a vampire rising to feed. You quickly find yourself fighting for your life. Make a **Combat (-2) check**. If you pass, you defeat the vampire, gaining 1 Clue Token and drawing 1 Unique Item. If you fail, roll a die and lose that much Stamina."
   },
   {
    "id": "loc-graveyard-03",
@@ -6590,14 +6578,6 @@
     "CP"
    ],
    "text": "If you have any Ghoul, Vampire, or Zombie monster trophies, you may exchange any of them for Clue Tokens equal to their toughness. If you have none of those trophies, the groundskeeper suspects you are a grave robber. Place a Patrol marker on the street area of Rivertown."
-  },
-  {
-   "id": "loc-graveyard-14",
-   "location": "Graveyard",
-   "expansions": [
-    "CP"
-   ],
-   "text": "If you have any Ghoul, Vampire, or Zombie monster trophies, you may exchange any of them for Clue Tokens equal to their toughness. If you have none of those trophies, the stench of death drives you to distraction, and you cannot bear to be near the graveyard. You are Barred from Rivertown."
   },
   {
    "id": "loc-graveyard-15",
@@ -12925,7 +12905,7 @@
    "expansions": [
     "AH"
    ],
-   "text": "The corpse you are examining isn't quite dead yet. It reaches out and grabs you by the throat. Lose 1 Sanity. Then, you must fight the corpse. If you pass a **Fight (-1) check**, you defeat it and gain 1 Clue Token. Otherwise, move to the street."
+   "text": "The corpse you are examining isn't quite dead yet. It reaches out and grabs you by the throat. Lose 1 Sanity. Then, you must fight the corpse. If you pass a **Combat (-1) check**, you defeat it and gain 1 Clue Token. Otherwise, move to the street."
   },
   {
    "id": "loc-st-mary-s-hospital-06",
@@ -17183,10 +17163,9 @@
    "id": "loc-ye-olde-magick-shoppe-09",
    "location": "Ye Olde Magick Shoppe",
    "expansions": [
-    "BG"
+    "KY"
    ],
-   "text": "Ah, there you are. That item you ordered has come in. Oddly enough, you ordered no such item. If you wish, you may make a **Will (-2) check** to impersonate the rightful owner. If you pass, you may draw 1 Unique Item. If you fail, you are arrested.",
-   "note": "Expansion reconstructed; the original data had lost it."
+   "text": "Ah, there you are. That item you ordered has come in. Oddly enough, you ordered no such item. If you wish, you may make a **Will (-2) check** to impersonate the rightful owner. If you pass, you may draw 1 Unique Item. If you fail, you are arrested."
   },
   {
    "id": "loc-ye-olde-magick-shoppe-10",
@@ -17304,10 +17283,9 @@
    "id": "loc-ye-olde-magick-shoppe-24",
    "location": "Ye Olde Magick Shoppe",
    "expansions": [
-    "IH"
+    "BG"
    ],
-   "text": "A famous occultist is in town giving a lecture. As part of his demonstration he offers to place you in a trance. If you agree, make a **Will (-2) check**. Gain 1 Clue Token for each success. if you fail the check, lose 1 Sanity as you are assailed by traumatic visions from your subconscious.",
-   "note": "Expansion reconstructed; the original data had lost it."
+   "text": "A famous occultist is in town giving a lecture. As part of his demonstration he offers to place you in a trance. If you agree, make a **Will (-2) check**. Gain 1 Clue Token for each success. if you fail the check, lose 1 Sanity as you are assailed by traumatic visions from your subconscious."
   },
   {
    "id": "loc-ye-olde-magick-shoppe-25",
@@ -17369,10 +17347,9 @@
    "id": "loc-ye-olde-magick-shoppe-32",
    "location": "Ye Olde Magick Shoppe",
    "expansions": [
-    "KY"
+    "IH"
    ],
-   "text": "A group of concerned citizens have come to harangue the proprietor and customers of the Magic Shoppe. You can calm them down with a **Will (-2) check**. If you succeed, empty the Outskirts returning all monsters in it to the cup. If you fail, the terror level is increased by 1.",
-   "note": "Expansion reconstructed; the original data had lost it."
+   "text": "A group of concerned citizens have come to harangue the proprietor and customers of the Magic Shoppe. You can calm them down with a **Will (-2) check**. If you succeed, empty the Outskirts returning all monsters in it to the cup. If you fail, the terror level is increased by 1."
   },
   {
    "id": "loc-ye-olde-magick-shoppe-33",
@@ -17429,6 +17406,206 @@
     "LT"
    ],
    "text": "You accidentally bump into a glass bottle filled with a strange grey powder. Make a **Speed (-2) check** to catch it before it breaks. If you fail, lose 1 Stamina as you break out into a fit of unexplained sneezing and itching."
+  },
+  {
+   "id": "loc-first-national-grocery-15",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "A local man is trying to pick up his sack of groceries but his malformed hands are unable to pick it up. Lose 1 Sanity as you hand the sack to him and look into his large, unblinking eyes.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-16",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "CP"
+   ],
+   "text": "A rock is thrown through one of the windows. The manager, Brian Burnham, is very upset. Make a **Will (-2) check** to calm him down enough to explain who would do it and why. If you pass, gain 1 Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-17",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "A salesman is visiting the shop, hoping to convince the owner to start carrying his wares. He offers to give you a sample of his product. Draw a Common Item. If you draw any ***Tomes*** or ***Weapons***, discard them and keep drawing. When you draw a card that is neither a ***Tome*** not a ***Weapon***, gain that Common Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-18",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "An Innsmouth woman approaches you in the grocery and tells you she received a promotional gift for buying so much soap. She doesn't particularly want the gift and is willing to sell it to you. You may pay $3 to gain 1 Commin Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-19",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "An old, hunched Innsmouth man is trying to pay for his groceries with an unusual object and doesn't understand that the grocery only accepts cash. You may spend $3 to pay for the groceries. If you do, he gives you the object. Gain 1 Unique Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-20",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "BG"
+   ],
+   "text": "As you look over the various products for sale in the grocery, you begin to notice occult symbolism in the companies' logos. Make a **Lore (-2) check**. If you pass, gain 2 Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-21",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "LT"
+   ],
+   "text": "Brian Burnham apologizes about how many things are out of stock and guarantees you that if you wait just a little bit, a shipment is expected soon. You may choose to be *delayed*. If you do, gain 2 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-22",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "Brian Burnham asks if you'd be interested in buying his train ticket. He says he planned to take a trip but can't now. He doesn't explain any further. If you do not already have one, you may spend $2 to gain a Rail Pass.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-23",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "KY"
+   ],
+   "text": "Brian Burnham calls you over to a corner of the grocery and tells you they got some special items for sale today. Draw 2 Common Items. You may purchase 1 for $1 more than its list price or both for $1 more than their combined list price. Discard any items that are not purchased.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-24",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Chief Constable Martin is in the grocery, helping himself to the candies at the register. He looks you over suspiciously. Make a **Sneak (-1) check** to avoid making him angry. If you fail, you are *arrested* and taken to the Innsmouth Jail.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-25",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "Digging through the trash, Brian Burnham finds a scrap of paper on which to draw a map of Innsmouth. Make a **Luck (-2) check**. If you pass, there's something interesting on the other side of the paper. Gain 1 Spell.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-26",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "BG"
+   ],
+   "text": "If you have one or more Corruption Cards, your presence clearly unnerves Brian Burnham. He insists you help yourself to whatever groceries you want and leave. Gain 1 Stamina, but lose 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-27",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "Once you get him started, Brian Burnham can talk for a while. Listening to him, you gain 2 Clue Tokens, but you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-28",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "Several shelves have had their contents dumped to the floor. Brian Burnham apologizes for the mess. If you help clean it up you are *delayed*, but gain 1 Stamina as Brian pays for you lunch.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-29",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "Something in the grocery must be rotting because the smell in here is terrible. You must either move to the streets or lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-30",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "KY"
+   ],
+   "text": "The front door is open but you don't find anyone inside. There's no money in the register and much of the inventory is gone. A little food still remains. Gain 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-31",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "The grocery is closed for the night. Move to the streets.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-32",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "IH"
+   ],
+   "text": "You are familiar with the families of Innsmouth. The grocery's manager, young Brian Burnham, grows worried and promises to call the authorities. If you currently have 3 or more Clue Tokens, gain 1 Clue Token that you must immediately spend to place it on any space on the Feds Raid Innsmouth track.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-33",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "LT"
+   ],
+   "text": "You bump into a man wearing strange robes. You catch a glimpse of a golden necklace hidden beneath his collar. He hisses an unrecognizable phrase at you. Make a **Will (-1) check**. If you fail, you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "loc-first-national-grocery-34",
+   "location": "First National Grocery",
+   "expansions": [
+    "MH",
+    "CP"
+   ],
+   "text": "You can tell that the man asking questions inside the grocery is clearly from out of town. Make a **Will (-2) check** to convince him to trust you. If you pass, you may take the Private Investigator card if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
   }
  ],
  "otherWorldEncounters": [
@@ -17577,14 +17754,6 @@
    "text": "Your journey through the darkness is slow but restful. you are restored to your maximum Stamina, but are *delayed*."
   },
   {
-   "id": "ow-abyss-19",
-   "world": "Abyss",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A horrible scene captures your gaze. Creatures that mortals would call angels and devils cavort together, their bodies and laughter mingling in an unholy fusion. If you join their dance, take both the Tainted card and the Anointed card."
-  },
-  {
    "id": "ow-abyss-20",
    "world": "Abyss",
    "expansions": [
@@ -17593,36 +17762,12 @@
    "text": "Something impossibly huge and ominous lurches across the horizon. Pass a **Luck (-1) check** or its gaze, with eyes the size of planets, falls upon you, and you lose 2 Sanity."
   },
   {
-   "id": "ow-abyss-21",
-   "world": "Abyss",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The faces of those you have failed erupt from the earth around you, accusing, pleading, hating. Pass a **Lore (-1) [2] check** to take the Psychic card. If you roll only 1 success, you must take either the Tainted or Harried card, and if you roll no successes, you must take both the Harried and Tainted cards."
-  },
-  {
    "id": "ow-abyss-22",
    "world": "Abyss",
    "expansions": [
     "CP"
    ],
    "text": "This place is alive with malevolent intent. It likes it when you inflict pain upon yourself. Discard any amount of Stamina, all at once; for each Stamina token you discarded, pass a **Will (-1) check** to gain 2 Clue Tokens."
-  },
-  {
-   "id": "ow-abyss-23",
-   "world": "Abyss",
-   "expansions": [
-    "CP"
-   ],
-   "text": "This place seduces you into madness with hints of escape. Discard any amount of Sanity, all at once; for each Sanity token you discarded, pass a **Fight (-1) check** to gain 2 Clue Tokens."
-  },
-  {
-   "id": "ow-abyss-24",
-   "world": "Abyss",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You look into a pool of water and see someone! Choose another investigator and make a **Will (-2) check**.\n**Successes:**\n**0)** He is drawn into the Abyss.\n**1-2)** You and he switch places.\n**3++)** You move to his location, and the gate through which you entered the Abyss is sealed."
   },
   {
    "id": "ow-abyss-25",
@@ -17843,14 +17988,6 @@
     "DH"
    ],
    "text": "Although the future is a frightening and confusing place, you come across a small statue of yourself, proving that, if nothing else, you made a difference to someone. You may discard 1 Madness card."
-  },
-  {
-   "id": "ow-another-time-02",
-   "world": "Another Time",
-   "expansions": [
-    "DH"
-   ],
-   "text": "An almost-overlooked fragment of text reveals your best course of action. Gain 1 Clue Token, plus 1 extra Clue Token for each Tome you have."
   },
   {
    "id": "ow-another-time-03",
@@ -18117,14 +18254,6 @@
    "text": "You read a detailed description of humanity's extinction. Pass a **Will (-1) check** or lose 2 Sanity."
   },
   {
-   "id": "ow-city-of-the-great-race-19",
-   "world": "City of the Great Race",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A monster erupts from the ground and surprises you! You suffer a -2 to all checks against this monster, but you may discard Spells during this combat as if they were Clue Tokens."
-  },
-  {
    "id": "ow-city-of-the-great-race-20",
    "world": "City of the Great Race",
    "expansions": [
@@ -18155,14 +18284,6 @@
     "CP"
    ],
    "text": "They've been collecting people! Make a **Lore (-2) [2] check** to determine how to release the victims. If you pass, you may search the Ally deck and take any Ally of your choice. If you fail, you are taken captive yourself, and are *delayed*."
-  },
-  {
-   "id": "ow-city-of-the-great-race-24",
-   "world": "City of the Great Race",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You may take 1 Spell, but must pass a **Will (+0) check** or lose 1 Sanity."
   },
   {
    "id": "ow-city-of-the-great-race-25",
@@ -18537,30 +18658,6 @@
    "text": "The book you are reading is a vacuous tome of oblivion, and it begins to suck you into its pages! Make a **Fight (+1) check** or you are **devoured**. Spells may be discarded as if they were Clue Tokens for this check."
   },
   {
-   "id": "ow-great-hall-of-celeano-21",
-   "world": "Great Hall of Celeano",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The unwelcome are shown no mercy. Make a **Lore (-1) check** or you are expelled from the great library, where a monster surprises you."
-  },
-  {
-   "id": "ow-great-hall-of-celeano-22",
-   "world": "Great Hall of Celeano",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Words are the nourishment of the mind. You lose 1 Stamina, but make a **Speed (-1) check**. If you pass, gain 2 Sanity."
-  },
-  {
-   "id": "ow-great-hall-of-celeano-23",
-   "world": "Great Hall of Celeano",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You find a journal so compelling that the author seems to live in your mind! Make a **Luck (+1) check**. If you fail, lose 2 Sanity. If you pass, draw an Ally and place tokens on it equal to the number of successes rolled. Discard 1 token from it during each Upkeep Phase. If it has no tokens at the beginning of the Upkeep Phase, discard the Ally instead."
-  },
-  {
    "id": "ow-great-hall-of-celeano-24",
    "world": "Great Hall of Celeano",
    "expansions": [
@@ -18740,9 +18837,11 @@
    "id": "ow-lost-carcosa-01",
    "world": "Lost Carcosa",
    "expansions": [
+    "MH",
     "CP"
    ],
-   "text": "Inside a glass case you see a strange Egyptian object next to a painting of yourself taking it from the case. Will you take the artifact or not?\n\nIf you take the artifact gain 1 Exhibit Item and 1 Madness card. You may then return to Arkham if you wish.\n\nIf you leave the artifact, you see a duplicate of yourself open the case and take the object. Make a **Will (-1) check**. If you pass, you manage to have a conversation with yourself and learn much. Gain 3 Clue Tokens. If you fail, the experience is too unnerving. Lose 1 Sanity and you are *delayed*."
+   "text": "Inside a glass case you see a strange Egyptian object next to a painting of yourself taking it from the case. Will you take the artifact or not?\n\nIf you take the artifact gain 1 Exhibit Item and 1 Madness card. You may then return to Arkham if you wish.\n\nIf you leave the artifact, you see a duplicate of yourself open the case and take the object. Make a **Will (-1) check**. If you pass, you manage to have a conversation with yourself and learn much. Gain 3 Clue Tokens. If you fail, the experience is too unnerving. Lose 1 Sanity and you are *delayed*.",
+   "note": "Expansion corrected from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
   },
   {
    "id": "ow-lost-carcosa-02",
@@ -19003,9 +19102,11 @@
    "world": "Lost Carcosa",
    "expansions": [
     "MH",
-    "LT"
+    "CP",
+    "KH"
    ],
-   "text": "Noatalba is performing a ritual to open the doors between Carcosa and other places. You may come closer to learn what he's doing or stay a safe distance away.\n\nIf you approach, make a **Sneak (-1) check**. If you pass, you learn his secret. Search the Spell deck and take the Control Gate spell, if it is available. If it is not, gain 3 Clue Tokens. If you fail, you disturb his ritual and a monster appears.\n\nIf you approach, make a **Sneak (-1) check**. If you pass, you learn his secret. Search the Spell deck and take the Control Gate spell, if it is available. If it is not, gain 3 Clue Tokens. If you fail, you disturb his ritual and a monster appears."
+   "text": "Noatalba is performing a ritual to open the doors between Carcosa and other places. You may come closer to learn what he's doing or stay a safe distance away.\n\nIf you approach, make a **Sneak (-1) check**. If you pass, you learn his secret. Search the Spell deck and take the Control Gate spell, if it is available. If it is not, gain 3 Clue Tokens. If you fail, you disturb his ritual and a monster appears.\n\nIf you approach, make a **Sneak (-1) check**. If you pass, you learn his secret. Search the Spell deck and take the Control Gate spell, if it is available. If it is not, gain 3 Clue Tokens. If you fail, you disturb his ritual and a monster appears.",
+   "note": "Expansion corrected from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
   },
   {
    "id": "ow-plateau-of-leng-01",
@@ -19568,22 +19669,6 @@
    "text": "The bodies of the drowned clutch at your ankles. Make a **Speed (-2) check** or lose 1 Stamina."
   },
   {
-   "id": "ow-r-lyeh-24",
-   "world": "R'lyeh",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The child is wracked with pain and begins to mutate. Pass a **Speed (-1) check** to gain Sanity equal to the number of successes rolled. If you fail, a monster surprises you and you suffer a -2 to all Horror checks against it!"
-  },
-  {
-   "id": "ow-r-lyeh-25",
-   "world": "R'lyeh",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You find a human corpse... which then sits up! Make a **Lore (+1) check**. If you fail, lose 2 Sanity. If you pass, you realize that it is a zombie and may draw an Ally. Place tokens on it equal to the number of successes rolled. Discard 1 token from it during each Upkeep Phase. If it has no tokens at the beginning of the Upkeep Phase, discard the Ally instead."
-  },
-  {
    "id": "ow-r-lyeh-26",
    "world": "R'lyeh",
    "expansions": [
@@ -20108,36 +20193,12 @@
    "text": "From this strange mindscape you can see into the dreams of those sleeping in Arkham. Make a **Speed (-1) check**. If you pass, you catch the delicate wisps of their thoughts, and gain 2 Clue Tokens. If you fail, their slumbering minds lash out at you, and you lose 2 Sanity."
   },
   {
-   "id": "ow-the-dreamlands-40",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Have an encounter at a location of your choice in Arkham, then return here. If you wish, you may pass a **Luck (-1) check** to realize that it was all a dream, and negate any Sanity or Stamina loss as a result of that encounter."
-  },
-  {
    "id": "ow-the-dreamlands-41",
    "world": "The Dreamlands",
    "expansions": [
     "CP"
    ],
    "text": "Have an encounter at a location of your choice in Arkham, then return to the Dreamlands."
-  },
-  {
-   "id": "ow-the-dreamlands-42",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Humans are not the only creatures to dream. Make a **Speed (-1) check**. If you pass, a monster appears. If you fail, a monster surprises you."
-  },
-  {
-   "id": "ow-the-dreamlands-43",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "If humans dream of monsters, do monsters dream of us? A monster surprises you, but seems terrified by your very humanity. Make a **Will (-1) check**. For each success you roll, you gain a +1 to all checks during this combat."
   },
   {
    "id": "ow-the-dreamlands-44",
@@ -20148,36 +20209,12 @@
    "text": "It's lovely here, and perfect... so perfect you might stay forever. Make a **Will (+3) check**. If you pass, gain 2 Sanity. If you fail, you are **devoured**."
   },
   {
-   "id": "ow-the-dreamlands-45",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Make a **Will (-1) check**. If you pass, you view the dreams around you with an objective eye: Gain 2 Clue Tokens. If you fail, the dreams are not so easily forgotten: Take the Harried card."
-  },
-  {
    "id": "ow-the-dreamlands-46",
    "world": "The Dreamlands",
    "expansions": [
     "CP"
    ],
    "text": "You come upon the borderlands. Pass a **Lore (-2) check** to gain 1 Stamina and 1 Sanity and return to Arkham. If you fail, move to the Plateau of Leng and your turn ends."
-  },
-  {
-   "id": "ow-the-dreamlands-47",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You find the corpses of a party of cultists. Make a **Fight (-1) check** to drag their bodies from the pit. If you pass, take a number of Cultists as trophies from the monster cup equal to the number of successes you rolled."
-  },
-  {
-   "id": "ow-the-dreamlands-48",
-   "world": "The Dreamlands",
-   "expansions": [
-    "CP"
-   ],
-   "text": "You stumble upon a nightmare, and must relive your past battles with horrible creatures. One of your monster trophies, chosen at random, returns to life and surprises you!"
   },
   {
    "id": "ow-the-dreamlands-49",
@@ -20273,7 +20310,7 @@
    "expansions": [
     "IH"
    ],
-   "text": "You come across a small bridge across a ravine, guarded by a knight in rusted armor riding a zebra. He demands either a story or rare knowledge to let you pass.\n\nYou may spend 1 gate trophy, 5 toughness worth of monster trophies, or discard 1 Skill to pass. If you do so, you are *Blessed* and return to Arkham.\n\nIf you decline to pay the toll, the rusted knight attacks you. Pass a **Fight (-3) [3] check** to defeat him and cross the bridge, returning to Arkham. If you fail, he knocks you into the ravine and you are *lost in time and space*."
+   "text": "You come across a small bridge across a ravine, guarded by a knight in rusted armor riding a zebra. He demands either a story or rare knowledge to let you pass.\n\nYou may spend 1 gate trophy, 5 toughness worth of monster trophies, or discard 1 Skill to pass. If you do so, you are *Blessed* and return to Arkham.\n\nIf you decline to pay the toll, the rusted knight attacks you. Pass a **Combat (-3) [3] check** to defeat him and cross the bridge, returning to Arkham. If you fail, he knocks you into the ravine and you are *lost in time and space*."
   },
   {
    "id": "ow-the-dreamlands-61",
@@ -21920,24 +21957,6 @@
    "text": "Your path ends at two identical doors. Make a **Luck (+0) check**. If you succeed, return to Arkham. If not, you are *lost in time and space*."
   },
   {
-   "id": "ow-other-73",
-   "world": null,
-   "colour": "green",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A dark ocean laps at your feet, and you see gables of old-fashioned buildings across the water. Could this be Innsmouth? Your Luck slider is reset to the lowest possible number, but you gain 1 Clue Token."
-  },
-  {
-   "id": "ow-other-74",
-   "world": null,
-   "colour": "green",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A man in a coat and hat takes your arm, and you find yourself leading the shadowy presence forward. All the reward you seem to need is his reassurance... perhaps you are being mystically controlled, but it's hard to care. Gain 1 Sanity, but take the Local Guide card."
-  },
-  {
    "id": "ow-other-75",
    "world": null,
    "colour": "green",
@@ -21974,24 +21993,6 @@
    "text": "A monster appears!"
   },
   {
-   "id": "ow-other-79",
-   "world": null,
-   "colour": "blue",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A scrap of paper flutters into your hands, with the words, \"this world was inhabited at one time by another race who, in practicing black magic, lost their foothold and were expelled from the allegorical garden...\" Lose up to 2 Clue Tokens due to this misleading information, if able."
-  },
-  {
-   "id": "ow-other-80",
-   "world": null,
-   "colour": "green",
-   "expansions": [
-    "CP"
-   ],
-   "text": "A strange song conjures up images of a life you could have lived. Gain Clue Tokens equal to your focus."
-  },
-  {
    "id": "ow-other-81",
    "world": null,
    "colour": "red",
@@ -21999,15 +22000,6 @@
     "CP"
    ],
    "text": "It was a diabolical trap, you suddenly realize... now that you're inside it! Make a **Lore (-1) check** or you are *delayed*."
-  },
-  {
-   "id": "ow-other-82",
-   "world": null,
-   "colour": "blue",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Make a **Luck (-1) check**. If you fail, a monster appears! If you pass, you may draw 2 monsters from the cup and choose which one appears."
   },
   {
    "id": "ow-other-83",
@@ -22028,15 +22020,6 @@
    "text": "Mr. Skin's the name, investigatin's my game, he says, with a friendly smile. But there's something about him that makes you feel like a helpless child before a ravenous beast. If you agree to let him come along, his form and face seem to shift... you may take any Ally of your choice, but you lose 2 Stamina and 2 Sanity."
   },
   {
-   "id": "ow-other-85",
-   "world": null,
-   "colour": "yellow",
-   "expansions": [
-    "CP"
-   ],
-   "text": "Nephren-Ka places your soul upon the Balance of Thoth, and finds you lacking. First discard Stamina or Sanity, whichever is higher, until your Stamina and Sanity are equal. Then you are surprised by a monster. If you defeat it, you may draw 1 Exhibit Item."
-  },
-  {
    "id": "ow-other-86",
    "world": null,
    "colour": "green",
@@ -22055,24 +22038,6 @@
    "text": "Something followed you here... if there are any monsters in the same location as the gate you entered, they appear. If they are not defeated, they remain in their original location."
   },
   {
-   "id": "ow-other-88",
-   "world": null,
-   "colour": "yellow",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The Black Man lays his book before you. If you wish to open the book, pass a **Luck (-2) check** to gain 5 Clue Tokens. if you fail, you are **devoured**."
-  },
-  {
-   "id": "ow-other-89",
-   "world": null,
-   "colour": "yellow",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The Bloated Woman makes you an offer. Lose 1 Sanity, then you may discard any amount of money, all at once, then draw a number of cards from the Unique Item deck equal to the total amount of money discarded. You may take one card from among those drawn with a value equal to or less than the amount of money discarded, then discard the rest."
-  },
-  {
    "id": "ow-other-90",
    "world": null,
    "colour": "red",
@@ -22082,24 +22047,6 @@
    "text": "The chess game with the strange serpent seems to go on for days. Pass a **Lore (+2) check** to gain $1 for each success you roll. If you fail, you are *delayed*."
   },
   {
-   "id": "ow-other-91",
-   "world": null,
-   "colour": "yellow",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The cultists thrust you forward, and the God of the Bloody Tongue surprises you! You gain a +1 to all skill checks against this monster for each Unique Item or Exhibit Item you have."
-  },
-  {
-   "id": "ow-other-92",
-   "world": null,
-   "colour": "red",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The mad scientist cackles as he pulls down on the lever of his machine. Pass a **Speed (+1) check** to reach the giant gem that powers it in time and gain $4. If you fail, you are thrown through a portal. Draw a Gate card, move to the Other World listed first, and have another encounter there."
-  },
-  {
    "id": "ow-other-93",
    "world": null,
    "colour": "green",
@@ -22107,15 +22054,6 @@
     "CP"
    ],
    "text": "The monster's corpse lies before you, and to your horror, you find your mouth watering. If you consum it, make a **Fight (-2) check**. If you fail, lose Stamina equal to the number of dice rolled. If you pass, gain Stamina equal to the number of dice rolled."
-  },
-  {
-   "id": "ow-other-94",
-   "world": null,
-   "colour": "blue",
-   "expansions": [
-    "CP"
-   ],
-   "text": "The stench of fecundity and blood surrounds you. A monster appears! If you do not evade it or defeat it on the first round of combat, it replicates, and you must evade or defeat a second one!"
   },
   {
    "id": "ow-other-95",
@@ -23169,6 +23107,1678 @@
     "LT"
    ],
    "text": "You've never seen nor experienced anything so awful. Roll four dice. For each die that is not a success, lose 1 Sanity or 1 Stamina (your choice)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-46",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A lurking monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-plateau-of-leng-48",
+   "world": "Plateau of Leng",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A monster appears from the shadows!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-212",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "DH"
+   ],
+   "text": "A hideous monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-213",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "A hideous monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-214",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-215",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-216",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-217",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-218",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-219",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-220",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-221",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "KH",
+    "LT"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-222",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "BG",
+    "KH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-223",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH",
+    "KY"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-224",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "CP",
+    "DH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-225",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You discover a complex series of glass tubing, flasks, and beakers. You may choose to sample one of the chemicals flwoing through this array. If you do, make a **Luck (-2) check**. If you pass, the concoction strangely changes you. Gain 1 Skill. If you fail, lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-17",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "No path can be discerned and the towering peaks make it difficult to kepp your bearings. Make a **Luck (-1) check** If you fail, you have lost your way, move to the first area of the Dreamlands and immediately have an encounter there.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-226",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The air here tastes sour and burns your lungs. Pass a **Fight (-1) check** or lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-18",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "There is no sound but the stony echoes of your footsteps. No encounter.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-227",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You recognize an odd object tucked inside a bird's nest. Make a **Sneak (-2) check** to remove the object without attracting the attention of any of the large birds nearby. If you pass, gain 1 Common Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-19",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "From a ledge above you, a monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-228",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Small, but precious stones are embedded into the wall. Gain $3.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-20",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You hear a horrible sound an instant before a sanity-shattering image appears in front of you. Make a **Speed (+0) check** to avert your eyes. If you fail, your mind suffers a terrible shock. Discard all of your Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-21",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "LT"
+   ],
+   "text": "The Ancient Ones will offer you a bargain. You may take personal power at the possible expense of humanity.\n\nIf you accept the bargain, gain 1 Spell and you are *Blessed*. Then add 1 doom token to the doom track.\n\nIf you do not accept the bargain, you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-229",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "To pass the time you have been having a conversation with yourself out loud. You are alarmed when you respond to you own questions in a language you have never heard before. Make a **Lore (-1) check** to interpet what you just said. If you pass, gain 1 Spell. If you fail, lose 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-22",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "The door to the Castle of the Great Old Ones opens. Pass a **Will (+1) check** or your fragile mind snaps. Draw 1 Madness card if you fail the check.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-23",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "BG"
+   ],
+   "text": "This is a place not meant for humans. To remain here, you may have to sacrifice your very humanity. Will you remain?\n\nIf you stay here, make a **Will (+1) check**.\nIf you fail, gain 2 Corruption cards.\n\nIf you choose to leave, make a **Luck (-2) check**. If you pass, return to Arkham. If you fail, you are *lost in time and space*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-230",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A terrible monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-231",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "The mystic energies of this place seem to have the power to rejuvenate you. You may discard 1 Spell or 1 Unique Item to restore your Stamina to full",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-232",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "You find this place is corrosive to your belongings. Metal rusts, wood rots, and cloth grows thin. For each Common Item you have, roll a die. If the result is a 1, discard the item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-24",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "Someone hid a precious treasure where they believe no one would dare go. Yet, they did not leave it unprotected. Gain 1 Unique Item and you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-233",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A powerful force is attempting to tear its way through the realities! Make a **Lore (+0) [2] check** to slow it down. If you pass, remove 1 Dunwich Horror token from the board.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-234",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You discover you are able to hear the thoughts of an individual in Arkham. Roll a die and consult the following table:\n1) These are not the thoughts of a human being. Lose 1 Sanity.\n2-3) The thoughts are preoccupied with trivial matters. No effect.\n4-5) You discover something vital! Gain 1 Clue Token.\n6) These are thoughts of a powerful wizard. Gain 1 Spell.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-r-lyeh-52",
+   "world": "R'lyeh",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You find a human corpse... which then sits up and begins to follow you around! Make a **Lore (+1) check**. If you fail, lose 2 Sanity, and you must take the Local Guide card, if it is available. If you pass, you may take the Private Investigator card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-101",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Make a **Will (-1) check**. If you pass, you view the dreams around you with an objective eye. Gain 2 Clue Tokens. If you fail, the dreams are not so easily forgotten. Take the Harried card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-235",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The Black Man lays his book before you. You may make a **Luck (-2) check** if you wish to open the book. If you pass, gain 5 Clue Tokens. If you fail, you are **devoured**.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-236",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The Bloated Woman makes you an offer. Lose 1 Stamina, and then you may discard any amount of money, all at once. Then draw a number of cards from the Unique Item deck equal to the total amount of money discarded. You may take one card from among those drawn with a value equal to or less than the amount of money discarded, then discard the rest.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-city-of-the-great-race-51",
+   "world": "City of the Great Race",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A monster appears from the ground! Treat this monster as if it has the **Ambush** special ability. You suffer a -2 to all checks against this monster, but you may discard Spells during this combat as if they were Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-237",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Nephren-Ka places your soul upon the Balance of Thoth, and finds you lacking. First discard Stamina or Sanity, whichever is higher, until your Stamina and Sanity are equal. Then a monster appears. Treat this monster as if it has the **Ambush** special ability. If you defeat it, you may draw 1 Exhibit Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-city-of-the-great-race-52",
+   "world": "City of the Great Race",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You may take one Spell. If you do, you must make a **Will (+0) check** and lose 1 Sanity if you fail.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-238",
+   "world": null,
+   "colour": "yellow",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The cultists thrust you forward, and the God of the Bloody Tongue appears! Treat him as if he has the **Ambush** special ability. You gain a +1 to all skill checks against this monster for each Unique Item or Exhibit Item you have.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-r-lyeh-53",
+   "world": "R'lyeh",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The child is wracked with pain and begins to mutate. Pass a **Speed (-1) check** to gain Sanity equal to the number of successes rolled. If you fail, a monster appears. Treat this monster as if it has the **Ambush** special ability, and you suffer a -2 to all **Horror checks** against it!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-47",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "DH"
+   ],
+   "text": "An almost-overlooked fragment of text reveals your best course of action. Gain 1 Clue Token, plus 1 extra Clue Token for each ***Tome*** you have.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-239",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-240",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-241",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-242",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-243",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "BG",
+    "KH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-244",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "CP",
+    "DH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-245",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH",
+    "KY"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-246",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "KH",
+    "LT"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-247",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The environment here adamently refuses to conform to logic or reason. For each Clue Token you have, roll a die. If the result is a \"1\", discard that Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-17",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "From the shadowy depths, a monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-248",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A thick pollen is infecting the air. You need to keep moving or you're going to pass out from breathing it in. Pass a **Speed (-1) check** or you are *delayed* here.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-18",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You find a Gug lying motionless, apparently dead. You may examine the body if you like. If you do, make a **Luck (-1) check**. If you pass, you discover what killed the monstrosity. Search the Unique Item deck and take the first ***Weapon*** you find. If you fail, the thing still has a little fight left in it. Lose 1 Stamina as it lashes out with the last of its strength.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-48",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You were told the book you were looking for was on one of these tables, but there's hundreds of books stacked in random piles! Make a **Luck (-1) check** to find it and gain 2 Clue Tokens if you pass. If you fail, you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-249",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Magic seems to inherently manipulate your environment in unpredictable ways. If you have 3 or more Spells, this world rejects you completely and you are *lost in time and space*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-19",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The longer you spend in this desolate place, the more it erodes your mind. If you are in the first area of the Underworld, lose 1 Sanity. If you are in the second area of the Underworld, lose 2 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-250",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A foul-smelling ichor covers the ground. Pass a **Will (-1) check** or lose 1 Stamina as the odor overwhelms you.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-20",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You hear gurgling voices echoing from somewhere in the darkness above you. At first, the sound is unnerving, but soon you realize they are unaware that you are listening. Make a **Sneak (-1) check** to get what information you can without alerting the speakers of your presence. If you pass, gain 1 Clue Token for each success.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-21",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "BG"
+   ],
+   "text": "The ghouls want to transform you into one of them! You may either fight them or allow their corrupting influence to affect you.\nIf you attempt to fight against them, make a **Fight (-1) check**. If you pass, gain 1 Sanity as you free yourself from their foul influence. If you fail, lose 2 Stamina in the course of the struggle.\nIf you allow yourself to be exposed to their corrupting influence, gain 2 Corruption cards and increase your maximum Stamina by 1.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-251",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find something that looks to be valuable, broken into many small pieces. If you wish, draw a Unique Item and stay here next turn as you reassemble it.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-18",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You recognize an old, dilapidated building as your home. On a hunch, you search the house to see if you've written a letter to yourself, knowing that you would be here at some point in the future. Make a **Luck (-1) check**. If you pass, you find a very informative letter from your future self. Gain 3 Clue Tokens. If you fail, lose 1 Sanity as there is no sign that you ever returned to this place.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-49",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A package wrapped in brown paper sits on a table. Your name is written on the package. If you choose to open it, make a **Luck (-1) check**. If you pass, search the Unique Item deck for the first ***Tome*** you find and keep it. If you fail, the package was a trap. You are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-19",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "CP"
+   ],
+   "text": "You are in ancient Egypt among the Dark Pharaoh's treasures! They are well-guarded, but you think you could steal one artifact.\nIf you attempt to steal an item, make a **Sneak (-2) check**. If you pass, you may search the Exhibit Item deck and take one card of your choosing. If you fail, lose 1 Stamina as the guards remove you forcibly.\nIf you do not attempt to steal anything, you notice the walls are adorned with paintings depicting the future. Make a **Lore (-1) check** and gain a Clue Token for each success.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-252",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A row of vaguely humanoid sculptures lines your path. As you walk past them, you cannot help but think that some malevolent force is watching you through their stone eyes. Lose 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-20",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You recognize the landscape as being Dunwich, but you see no recognizable buildings. A group of Vikings stand near a large stone covered in glyphs and are speaking a language you don't understand. When the discussion is over, they begin to bury the stone. Make a **Will (-1) check** to memorize the location. If you pass, gain 2 Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-plateau-of-leng-50",
+   "world": "Plateau of Leng",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You come across some familiar tracks in the snow. Someone you know was here before you. Make a **Lore (-1) check** to recall who it was. If you pass, gain 2 Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-253",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "A strange euphoria begins to overtake you. You are irrationally certain things will be okay. Gain 1 Sanity. Then make a **Luck (-1) check**. If you fail, overconfidence leads you astray and you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-21",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You are in the Congregational Church during December of 1722. An angry mob has gathered outside while those within are racing to hide a strange collection of artifacts. Make a **Sneak (-1) check**. If you pass, gain 1 Unique Item. If you fail, the people inside the church turn on you. Lose 2 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-22",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "Nodens wishes to thwart the forces of the Ancient One. You may choose 1 monster in Kingsport and 1 in Dunwich, each with 2 or less toughness, and remove them from the board. Then discard 1 item, if able, which Nodens claims as tribute.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-22",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "KY"
+   ],
+   "text": "You find yourself in the recent past, just before a terrible hardeship is about to befall one of the investigators. Will you attempts to interfere?\nIf you choose to interfere, make a **Speed (-1)** check to act in time. If you pass, you may choose any investigator and restore either his Sanity or his Stamina to full. If you fail, you are Cursed for trying to interfere in the natural order of things.\nIf you choose not to interfere, make a **Lore (-1) check** and gain 1 Clue Token for each success as you are able to analyze events as they unfold.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-254",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "At some point in your other-worldly travels, you began suffering from a fever. Lose 1 Stamina. Then make a **Will (-1) check** to glean useful insights from your delirious dreams. If you pass, gain 1 Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-23",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You quickly determine that you are in Kingsport in 1685. To your amazement, you are greeted by a man you know to still be alive in 1926, William Bain. If you pass a **Will -2 check** or discard an Ancient Tome, he offers you his help. Take his Ally card. If it isn't available, you are *Blessed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-23",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You may choose to make a **Fight (-2) check** to scare the ghouls away from their quarry. If you pass, claim 1 monster trophy at random from the cup, ignoring the **Endless** ability.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-255",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A strangely-dressed man claiming to be a doctor offers to trade valuable information for an item he purports to need. You may discard any item that is not a ***Weapon*** and then gain 3 Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-24",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You recognize the building you are in as a library, but it is necessary to operate strange machines to find the books you seek. Make a **Lore (-2) check**. If you pass, gain 2 Clue Tokens and then search the Common Item deck and take the first ***Tome*** you find.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-256",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "Someone has drawn a crude map of the terrain ahead of you. Make a **Lore (-1) check** to interpret it. If you pass, return to Arkham. If you fail, you are *lost in time and space*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-25",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find yourself in a small New England colony that suspects that you practice witchcraft. Make a **Sneak (+1) check** to avoid capture. If you fail, draw an Injury card as you endure their rigorous questioning.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-24",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "LT"
+   ],
+   "text": "On the face of one of the granite mountains, in letters larger than any house you've ever seen, a message is written in a language you are somehow able to interpret. The message informs you of how to warp reality and control the doors between reality, but it also warns of terrible dangers that threaten any who do so.\nIf you attempt to control the doors between realities, make a **Lore (-1) check**. If you pass the check, search the Spell deck for the Control Gate spell and take it. If the spell is not available, nothing happens. If you fail the check, draw a monster for each open rift and place the monster on the rift's current location. If there are no open rifts, nothing happens.\nIf you do not attempt to control the doors, gain 3 Clue Tokens and you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-257",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A strange song conjures up images of a life you could have lived. Gain Clue Tokens equal to your focus (to a maximum of 4).",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-258",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A dark ocean laps at your feet, and you see gables of old-fashioned buildings across the water. Could this be Innsmouth? Set your Luck slider is reset to the lowest possible number, but you gain 1 Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-50",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Words are the nourishment of the mind. Reading as quickly as you can, you lose 1 Stamina, but make a **Speed (-1) check**. If you pass, gain 2 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-259",
+   "world": null,
+   "colour": "green",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A man in a coat and hat takes your arm, and you find yourself leading the shadowy presence forward. All the reward you seem to need is his reassurance... perhaps you are being mystically controlled, but it's hard to care. Gain 1 Sanity, but take the Local Guide card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-102",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You find the corpses of strange beings. Make a **Fight (-1) check** to drag their bodies from the pit. If you pass, take a number a monster from the cup and take it as a monster trophy, even if it has the **Endless** ability. If the monster's toughness is less than the number of successes you rolled, draw another monster from the cup and take it as a monster trophy, even if it has the **Endless** ability.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-103",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Have an encounter at a location of your choice in Arkham. Then return here and make a **Luck (-1) check**. If you pass, you realize it was all a dream, and negate any Sanity or Stamina loss as a result of that encounter.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-51",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You find a journal so compelling that the author seems to live in your mind! Make a **Luck (+1) check**. If you fail, lose 2 Sanity. If you pass, take the Visions card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-260",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-261",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-262",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-263",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-264",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "KH",
+    "KY"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-265",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "CP",
+    "KH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-266",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "BG",
+    "DH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-267",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH",
+    "LT"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-268",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "An enigmatic traveler sympathizes with your cause and offers some good advice. Gain 1 Clue Token. Then make a **Luck (-2) check**. If you pass, you are *Blessed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-25",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You climb and climb, ascending into the clouds. Make a **Luck (+0) check** to make your way thourgh the dense mist. If you fail, you come out of the clouds somewhere else. Move to the first area of the Plateau of Leng.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-269",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "Water begins to flood your immediate environment! Make a **Fight (-1) check** to prevent yourself from being swept away by the waves. If you fail, choose any aquatic location, move there, and do not take an explored marker.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-26",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You find yourself in the trenches of the Great War. Make a **Fight (+0) check** to keep yourself from harm. If you fail, draw an Injury card.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-26",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You are not welcome here! Some invisible force lifts you up and flings you through the sky. Make a **Luck (-2) check.** If you pass, return to Arkham. If you fail, move to the first ara of the Dreamlands and immediately have an encounter there.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-27",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KY"
+   ],
+   "text": "The ground is littered with typed notes from a play that mentions you by name as a character! The pages provide directions for you. Will you follow the script?\n\nIf you do follow the script, lose 2 Sanity. Then, if you are still sane, return to Arkham.\n\nIf you do not follow the script, make a **Will (-1) check**. If you pass, gain 1 Sanity. If you fail, a monster appears!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-28",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "CP"
+   ],
+   "text": "An enormous pillar is carved in the image of the Dark Pharoah. A powerful force is trying to compel you toward it. You may approach the pillar or try to walk away from it.\n\nIf you approach, make a **Will (-1) check** to keep your composure as an ancient intelligence floods your thoughts. If you pass, take the Visions card if it is available. If you fail, discard all your Clue Tokens.\n\nIf you walk away from the pillar, make a **Luck (-1) check** and gain 1 Sanity for each success. If you fail, you feel the Pharoah's presence continue to haunt you. Take the Harried card if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-270",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Stinging insects swarm about you! Make a **Speed (-1) check** to find shelter. If you fail, lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-29",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A monster appears, intent on your destruction.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-271",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You suspect you would travel more quickly if you weren't carrying so many things. Discard 1 item or you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-plateau-of-leng-51",
+   "world": "Plateau of Leng",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You need to trade something for a warm coat or the icy winds will overwhelm you. Lose 3 Stamina, but reduce the amount of Stamina lost by 1 (to a minimum of 0) for each Common Item or Unique Item you discard.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-30",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The enormous sillhouette of some iunthinkably large creature looms on the horizon. You prudently choose to travel in a different direction. You have no encounter.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-272",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A distant drumming can be heard. Strangely, it gives you a sense of security and protection, as if it were warding away some evil. Gain 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-31",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The cold air pierces through you. Lose 1 Stamina. Then, if you are still conscious, make a **Will (-1) check** to keep moving. If you fail, you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-273",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find a number of old barrels, lost from some bygone century. Make a **Luck (-1) check**. If you pass, you discover something worthwhile. Gain a Common Item. If you fail, the barrels' rotten contents nauseate you. Lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-27",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You see a flier looking for investors in a new plan to establish a railroad across the country. Pay $3 if you want to invest. If you do, gain a Retainer card and a Rail Pass.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-plateau-of-leng-52",
+   "world": "Plateau of Leng",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "The ice beneath your feet begins to crack. You need to move fast to get back on solid ground. Make a **Speed (+1) [2] check**. If you fail, large chunks of ice smash into you as you fall endlessly into the darkness. Lose 2 Stamina and you are *lost in time and space*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-28",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "BG"
+   ],
+   "text": "You see primitive, hunched figures burning meat upon an altar. They chant in a language you do not recognize but the repetition begins to insinuate the words into your memory. Would you like to memorize the chant?\nIf you do, make a **Will (-1) check**. If you pass, gain a \"One of the Thousand\" Membership card. If you fail, lose 2 Sanity.\nIf you choose not to, the words affect your subconscious, shaping your dreams against your will. Lose 1 Sanity and gain 1 Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-274",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "The time you have spent in this alien landscape is altering your perceptions. New, strange knowledge is burning itself into your mind. Lose 1 Sanity. Then, if you are still sane, gain 1 Spell.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-29",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find yourself in a small New England colonial town. On the door of one of the buildings is a symbol you recognize from the Silver Twilight Lodge. As you examine it, you overhear voices inside. Make a **Sneak (-1) check**. If you pass, you learn the secrets of their initiation. Take a Silver Twilight Lodge Membership. If you fail, the people inside discover you. Lose 1 Stamina as they drag you away.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-275",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "You recognize this landscape from a painting you saw recently. Make a **Lore (-2) check** to remember the details of the artwork. If you pass you recall a strange object depicted and can find that location. Gain 1 Unique Item.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-30",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You have the opportunity to consult the Oracle at Delphi in Ancient Greece. If you wish, make a **Lore (-1) check** to interpret their message. Gain 1 Clue Token for each success. If you fail the check, you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-unknown-kadath-32",
+   "world": "Unknown Kadath",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You can see a message written high on a cliff face. If you wish, you may try to scale the rock wall to read it. If you do, make a **Fight (-1) check**. If you pass, you gain 1 Spell. If you fail, lose 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-31",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "LT"
+   ],
+   "text": "As you try to get your bearings you bump into a gentleman dressed as a musketeer who begins to angrily berate you in French. You get the impression he's challenging you to a duel.\nIf you accept the challenge, make a **Fight (-1) check**. If you pass, you take the man's weapon as a trophy. Search the Unique Item deck and take the first ***Weapon*** you find. If you fail, gain an Injury card.\nIf you decline the challenge, you are hunted through the streets of Paris. Make a **Sneak (-1) check**. If you pass, you manage to find a safe place to rest and recuperate, restoring your Stamina to full. If you fail, you are discovered and stripped of your belongings. Choose 2 of your items to keep and discard the rest.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-276",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A large mirror stands before you. Your reflection bears an unfamiliar mark upon its forehead. Make a **Will (+0) check**. If you pass, the mark fades from the reflection. If you fail, it remains and you are *Cursed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-32",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You encounter people you know and places you are familiar with, but no one recognizes you. It is as if you'd never been born. Seeing how unhappy everyone here is, you realize what a positive impact you've made on those around you. Gain 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-277",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You see a reflection of yourself and realize how much your experiences have changed you. You believe the knowledge you've gained is worth the sacrifices you've made. If your Sanity is at full, you may discard 3 Clue Tokens to be *Blessed*. Otherwise, if you are not at full Sanity, for each Clue Token you discard, gain 1 Sanity",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-another-time-33",
+   "world": "Another Time",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find yourself in Victorian England, but a man tells you he has a machine that can return you to your own time. Make a **Luck (-1) check** to see if the machine works. If you pass, return to Arkham. If you fail, you are *delayed* as the machine sends you to the wrong time.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-abyss-51",
+   "world": "Abyss",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The faces of those you have failed erupt from the earth around you, accusing, pleading, hating. Pass a **Lore (-1) [2] check** to take the Psychic card, if it is available. If you roll only 1 success, you must take either the Tainted or Harried card, if either is available, and if you roll no successes, you must take both the Harried card, if it is available, and Tainted card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-278",
+   "world": null,
+   "colour": "red",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The mad scientist cackles as he pulls down on the lever of his machine. Pass a **Speed (+1) check** to reach the giant gem that powers it in time and gain $4. If you fail, you are thrown through a portal. Draw another Gate card and move to the first area of the first Other World listed on that card. Then have another encounter there.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-abyss-52",
+   "world": "Abyss",
+   "expansions": [
+    "CP"
+   ],
+   "text": "This place seduces you into madness with hints of escape. Discard any amount of Sanity, all at once; for each Sanity token you discarded, make a **Fight (-1) check** to gain 2 Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-279",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-280",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-281",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-282",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "IH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-283",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "CP",
+    "KH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-284",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "CP",
+    "KH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-285",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "BG",
+    "DH"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-286",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "KH",
+    "KY"
+   ],
+   "text": "Discard this card and draw again.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-287",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You feel an outside intelligence trying to take over your body, replacing your identity with its own. You fight it off with great difficulty. Make a **Will (-2) check**. If you pass, you gain a specialized knowledge from that intelligence. Draw 1 Skill. If you fail, you lose part of yourself in the struggle. Discard all of your Clue Tokens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-25",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Here in the Vale of Pnath, you discover a friend once thought lost. Make a **Luck (-2) check**. If you pass, draw an Ally. If you fail, your friend is in no condition to return with you. Lose 1 Sanity and return the top card of the Ally deck to the box.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-26",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "CP"
+   ],
+   "text": "The sickly phosphorescence that permeates this place does not continue into the chambers ahead. You may try to collect some of the strange substance to light your way as you continue.\nIf you collect the eerily glowing material, you find your way out of the Underworld, but the phosphorescence burns your skin. Return to Arkham and then lose 1 Stamina.\nIf you stumble forward into the dark without any light, make a **Luck (-1) check** to make your way. If you fail, you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-288",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "You find a scattered pile of familiar objects, each one something you have lost at some point in your life. Some of them may prove usefull now. Make a **Luck (-1) check**. If you pass, you may look at the bottom of the Common Item deck and then draw 1 Common Item from either the top or the bottom of the deck.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-27",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Gigantic, four-armed creatures are fast asleep. Make a **Sneak (+1) check**. If you fail, lose 1 Stamina and you are *lost in time and space*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-289",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The landscape around you begins to shift and reshape itself. Make a **Lore (-2) check**. If you pass, you recognize this place and may move to the first area of any Other World and gain 1 Clue Token.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-28",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "A pack of ghouls are feasting on carrion. It is a truly repugnant sight to behold. Lose 1 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-52",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The book's images are so familiar, but the strange language is frustratingly indecipherable. Make a **Lore (+1) check** and gain 1 Clue Token for each success. Then lose 2 Sanity.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-290",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "It's a door! You must have walked by the other side of that door a hundred times back home. Gain 1 Sanity. Then make a **Fight (-2) check** to break the lock. If you pass, return to Arkham.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-291",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "Your terrible thirst has finally convinced you to try drinking some of the water here. Make a **Luck (-1) check** and consult the following chart:\nSuccesses:\n0) Lose 1 Stamina.\n1) No effect.\n2) Gain 1 Stamina.\n3+) Gain 1 Stamina and draw 1 Spell.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-29",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KH"
+   ],
+   "text": "The granite peaks are nearly impossible to pass. Lose 1 Stamina and then make a **Fight (-1) check**. If you fail, you are *delayed*.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-292",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You are suddenly plagued by a vision of yourself inside a cell at the asylum hallucinating a journey to another world. Make a **Luck (+1) check**. If you fail, move immediately to Arkham Asylum and draw a Madness card.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-293",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You find a sheltered area, a veritable oasis in this strange place. You may take the opportunity to rest. If you do, you are *delayed* and gain 1 Sanity and 1 Stamina.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-294",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH",
+    "KH"
+   ],
+   "text": "You discover a dimensional rift, bleeding macabre energies into your home world. Choose 1 open rift. You must then either discard 3 Clue Tokens and close the rift or move to the rift's current location, without gaining an \"explored\" marker. If no rifts are open, return to Arkham.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-30",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A pack of ghasts chase after you. Climb up to the sunlight as fast as you can! Make a **Speed (+1) check**. If you fail, gain an Injury card from their ferocious attack.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-295",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "You can barely see anything in the dim lighting, but you can hear something large and threatening nearby. Make a **Sneak (+0) check**. If you fail, the creature pounces. Draw an Injury card.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-31",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "DH"
+   ],
+   "text": "A nightgaunt drops some hapless person from the darkness above. The victim did not survive the impact but he seems to be holding a book. Make a **Luck (-2) check**. If you pass, search the Unique Item deck and take the first ***Tome*** you find. If you fail, search the Common Item deck and take the first ***Tome*** you find.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-underworld-32",
+   "world": "The Underworld",
+   "expansions": [
+    "MH",
+    "KY"
+   ],
+   "text": "A ghoul offers you a splendid diadem of blazing gold. Will you accept it?\nIf you do not accept the crown, the ghoul lashes out in rage. Pass a **Fight (+1) check** or reduce your maximum Stamina by 1.\nIf you do accept the crown, gain $8 and reduce your maximum Sanity by 1.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-296",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Make a **Luck (-1) check**. If you fail, a monster appears! If you pass, you may draw 2 monsters from the cup and choose which one appears. Return the other monster to the cup.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-abyss-53",
+   "world": "Abyss",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You look into a pool of water and see someone! Choose another investigator and make a **Will (-2) check**.\nSuccesses:\n0) He is drawn into the Abyss.\n1-2) You and he switch places.\n3+) You move to his location, and, if the gate through which you entered the Abyss is still open, it is sealed.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-297",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The stench of fecundity and blood surrounds you. A monster appears! If you do not evade it or defeat it on the first round of combat, a second monster appears that you must evade or defeat after the first one!",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-104",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "If humans dream of monsters, do monsters dream of us? A monster appears! Treat it as if it has the **Ambush** special ability. This monster seems terrified by your very humanity. Make a **Will (-1) check**. For each success you roll, you gain a +1 to all checks during this combat.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-other-298",
+   "world": null,
+   "colour": "blue",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You find a scrap of paper bearing the words, \"This world was inhabited at one time by another race who, in practising black magic, lost their foothold and were expelled from the allegorical garden...\" Lose up to 2 Clue Tokens due to this misleading information, if able.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-105",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "You stumble upon a nightmare, and must relive your past battles with horrible creatures. One of your monster trophies, chosen at random, returns to life. Treat this monster as if it has the **Ambush** special ability. If you do not defeat this monster, return it to the cup. If you do not have a monster trophy, nothing happens.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-abyss-54",
+   "world": "Abyss",
+   "expansions": [
+    "CP"
+   ],
+   "text": "A horrible scene captures your gaze. Creatures that mortals would call angels and devils cavort together, their bodies and laughter mingling in an unholy fusion. If you join their dance, take both the Tainted card, if it is available, and the Anointed card, if it is available.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-the-dreamlands-106",
+   "world": "The Dreamlands",
+   "expansions": [
+    "CP"
+   ],
+   "text": "Humans are not the only creatures to dream. Make a **Speed (-1) check** and a monster appears. If you failed the check, treat the monster as if it has the **Ambush** special ability.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
+  },
+  {
+   "id": "ow-great-hall-of-celeano-53",
+   "world": "Great Hall of Celeano",
+   "expansions": [
+    "CP"
+   ],
+   "text": "The unwelcome are shown no mercy. Make a **Lore (-1) check** or a monster appears! Treat this monster as if it has the **Ambush** special ability.",
+   "note": "Imported from the Arkham Companion app's card database (github.com/DeckardSix/arkham-companion)."
   }
  ]
 }

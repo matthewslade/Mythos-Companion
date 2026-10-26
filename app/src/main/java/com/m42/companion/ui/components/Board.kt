@@ -54,6 +54,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -188,7 +189,7 @@ fun DeckButton(item: BoardItem.Deck, onClick: () -> Unit) {
         Surface(
             onClick = onClick,
             color = item.color,
-            contentColor = Color.White,
+            contentColor = readableOn(item.color),
             shape = MaterialTheme.shapes.medium,
             modifier = Modifier.weight(1f).heightIn(min = 56.dp),
         ) {
@@ -221,6 +222,16 @@ fun DeckButton(item: BoardItem.Deck, onClick: () -> Unit) {
             }
         }
     }
+}
+
+/** White or dark ink, whichever contrasts more with [background] (light card backs need dark text). */
+fun readableOn(background: Color): Color {
+    val dark = Color(0xFF1F1A12)
+    fun contrast(a: Color, b: Color): Float {
+        val (hi, lo) = listOf(a.luminance(), b.luminance()).sortedDescending()
+        return (hi + 0.05f) / (lo + 0.05f)
+    }
+    return if (contrast(Color.White, background) >= contrast(dark, background)) Color.White else dark
 }
 
 @Composable
