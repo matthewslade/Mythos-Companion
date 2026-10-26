@@ -1,4 +1,16 @@
-out
-gen
+# Gradle / Android Studio
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
 *.iml
-*.idea
+.idea/
+.kotlin/
+
+# macOS
+.DS_Store
+
+# Conductor workspace scratch
+.context/
