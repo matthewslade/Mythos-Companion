@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,7 +21,6 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.MoreVert
@@ -53,7 +51,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
@@ -79,11 +80,13 @@ sealed interface BoardItem {
         val label: String,
         val detail: String? = null,
         val color: Color,
-        /** Gate colours for Arkham Other Worlds. */
-        val dots: List<Color> = emptyList(),
+        /** Background gradient instead of [color], e.g. an Arkham Other World's gate colours. */
+        val gradient: List<Color> = emptyList(),
         val secondaryAction: Pair<String, () -> Unit>? = null,
         /** Takes a whole row of the grid. */
         val wide: Boolean = false,
+        /** Takes half a row, for long names that would wrap in a normal-width button. */
+        val half: Boolean = false,
     ) : BoardItem {
         override val key = "deck:$deckId"
     }
@@ -162,14 +165,24 @@ fun GameBoard(
 
 @Composable
 private fun DeckGrid(items: List<BoardItem>, minButtonWidth: Dp, modifier: Modifier, onOpen: (String) -> Unit) {
+    // The grid uses half-width cells: a normal button spans two, a half-row button half the row.
     LazyVerticalGrid(
-        columns = GridCells.Adaptive(minButtonWidth),
+        columns = GridCells.Adaptive(minButtonWidth / 2 - 4.dp),
         modifier = modifier.testTag("deck-grid"),
         contentPadding = PaddingValues(16.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        items(items, key = { it.key }, span = { if (it is BoardItem.Heading || (it is BoardItem.Deck && it.wide)) GridItemSpan(maxLineSpan) else GridItemSpan(1) }) { item ->
+        items(items, key = { it.key }, span = { item ->
+            val normal = minOf(2, maxLineSpan)
+            GridItemSpan(
+                when {
+                    item is BoardItem.Heading || (item is BoardItem.Deck && item.wide) -> maxLineSpan
+                    item is BoardItem.Deck && item.half -> maxOf(normal, maxLineSpan / 2)
+                    else -> normal
+                },
+            )
+        }) { item ->
             when (item) {
                 is BoardItem.Heading -> Text(
                     item.title,
@@ -186,26 +199,31 @@ private fun DeckGrid(items: List<BoardItem>, minButtonWidth: Dp, modifier: Modif
 @Composable
 fun DeckButton(item: BoardItem.Deck, onClick: () -> Unit) {
     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        val shape = MaterialTheme.shapes.medium
+        val gradient = item.gradient.size > 1
         Surface(
             onClick = onClick,
-            color = item.color,
-            contentColor = readableOn(item.color),
-            shape = MaterialTheme.shapes.medium,
-            modifier = Modifier.weight(1f).heightIn(min = 56.dp),
+            color = if (gradient) Color.Transparent else item.color,
+            contentColor = if (gradient) Color.White else readableOn(item.color),
+            shape = shape,
+            modifier = Modifier
+                .weight(1f)
+                .heightIn(min = 56.dp)
+                .then(if (gradient) Modifier.background(Brush.horizontalGradient(item.gradient), shape) else Modifier),
         ) {
             Row(
                 Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Column(Modifier.weight(1f)) {
-                    Text(item.label, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                    // A soft shadow keeps white text legible across the light end of a gradient.
+                    val labelStyle = MaterialTheme.typography.titleMedium.let {
+                        if (gradient) it.copy(shadow = Shadow(Color.Black.copy(alpha = 0.55f), Offset(0f, 2f), 4f)) else it
+                    }
+                    Text(item.label, style = labelStyle, fontWeight = FontWeight.SemiBold)
                     item.detail?.let {
                         Text(it, style = MaterialTheme.typography.bodySmall, modifier = Modifier.alpha(0.88f))
                     }
-                }
-                item.dots.forEach { dot ->
-                    Spacer(Modifier.width(4.dp))
-                    Box(Modifier.size(12.dp).background(dot, CircleShape))
                 }
             }
         }

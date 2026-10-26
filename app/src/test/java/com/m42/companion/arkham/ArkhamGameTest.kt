@@ -37,7 +37,11 @@ class ArkhamGameTest {
             listOf("Arkham – Northside", "Arkham – Downtown"),
             game.locationGroups(config).take(2).map { it.title },
         )
-        assertEquals("Dunwich", game.locationGroups(config)[9].title)
+        assertEquals(
+            listOf("Dunwich – Village Commons", "Dunwich – Blasted Heath", "Dunwich – Backwoods Country"),
+            game.locationGroups(config).drop(9).take(3).map { it.title },
+        )
+        assertTrue(game.locationGroups(config).all { it.locations.size == 3 || it.title == "Arkham – French Hill" })
     }
 
     @Test

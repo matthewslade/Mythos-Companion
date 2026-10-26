@@ -74,7 +74,7 @@ class ArkhamGame(private val data: ArkhamData) {
     fun worlds(config: ArkhamConfig) = data.otherWorlds.filter { it.expansion in config.inPlay }
 
     fun locationGroups(config: ArkhamConfig): List<LocationGroup> = locations(config)
-        .groupBy { loc -> loc.neighbourhood?.let { "Arkham – $it" } ?: boardNames.getValue(loc.board) }
+        .groupBy { loc -> boardNames.getValue(loc.board) + (loc.neighbourhood?.let { " – $it" } ?: "") }
         .map { (title, locs) -> LocationGroup(title, locs) }
 
     fun deckName(deckId: String): String = when {

@@ -24,6 +24,10 @@ The app also colours game terms itself and puts a small icon in front of each on
 
 The rules live in `ui/components/Terms.kt`. The on-device test `MarkupScreenshots` renders a real example card for every term kind in light and dark mode.
 
+## Board colours
+
+Each Arkham Horror location button uses its neighbourhood's card-back colour. The nine Arkham neighbourhoods were sampled from card art in two fan Arkham Companion apps. The Dunwich, Kingsport and Innsmouth neighbourhoods were described from the physical cards and matched by eye. The colours are in `ui/arkham/ArkhamScreens.kt`. The expansion neighbourhoods (Village Commons, Harborside, Church Green and the rest) come from the Arkham Companion database and the wiki, which agree on all 30 locations.
+
 ## `eldritch.json`
 
 ```json

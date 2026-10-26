@@ -180,123 +180,153 @@
   },
   {
    "name": "Bishop's Brook Bridge",
-   "board": "DH"
-  },
-  {
-   "name": "Cold Spring Glen",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Village Commons"
   },
   {
    "name": "Darke's Carnival",
-   "board": "DH"
-  },
-  {
-   "name": "Devil's Hopyard",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Village Commons"
   },
   {
    "name": "Dunwich Village",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Village Commons"
+  },
+  {
+   "name": "Devil's Hopyard",
+   "board": "DH",
+   "neighbourhood": "Blasted Heath"
   },
   {
    "name": "Gardners' Place",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Blasted Heath"
   },
   {
    "name": "Harney Jones' Shack",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Blasted Heath"
+  },
+  {
+   "name": "Cold Spring Glen",
+   "board": "DH",
+   "neighbourhood": "Backwoods Country"
   },
   {
    "name": "Whateley Farm",
-   "board": "DH"
+   "board": "DH",
+   "neighbourhood": "Backwoods Country"
   },
   {
    "name": "Wizard's Hill",
-   "board": "DH"
-  },
-  {
-   "name": "607 Water St.",
-   "board": "KH"
+   "board": "DH",
+   "neighbourhood": "Backwoods Country"
   },
   {
    "name": "7th House on the Left",
-   "board": "KH"
-  },
-  {
-   "name": "Artists' Colony",
-   "board": "KH"
+   "board": "KH",
+   "neighbourhood": "Central Hill"
   },
   {
    "name": "Congregational Hospital",
-   "board": "KH"
-  },
-  {
-   "name": "Hall School",
-   "board": "KH"
-  },
-  {
-   "name": "Neil's Curiosity Shop",
-   "board": "KH"
-  },
-  {
-   "name": "North Point Lighthouse",
-   "board": "KH"
+   "board": "KH",
+   "neighbourhood": "Central Hill"
   },
   {
    "name": "St. Erasmus's Home",
-   "board": "KH"
+   "board": "KH",
+   "neighbourhood": "Central Hill"
   },
   {
-   "name": "Strange High House",
-   "board": "KH"
+   "name": "607 Water St.",
+   "board": "KH",
+   "neighbourhood": "Harborside"
   },
   {
-   "name": "The Causeway",
-   "board": "KH"
+   "name": "North Point Lighthouse",
+   "board": "KH",
+   "neighbourhood": "Harborside"
   },
   {
    "name": "The Rope and Anchor",
-   "board": "KH"
+   "board": "KH",
+   "neighbourhood": "Harborside"
+  },
+  {
+   "name": "Artists' Colony",
+   "board": "KH",
+   "neighbourhood": "South Shore"
+  },
+  {
+   "name": "Hall School",
+   "board": "KH",
+   "neighbourhood": "South Shore"
+  },
+  {
+   "name": "Neil's Curiosity Shop",
+   "board": "KH",
+   "neighbourhood": "South Shore"
+  },
+  {
+   "name": "Strange High House",
+   "board": "KH",
+   "neighbourhood": "Kingsport Head"
+  },
+  {
+   "name": "The Causeway",
+   "board": "KH",
+   "neighbourhood": "Kingsport Head"
   },
   {
    "name": "Wireless Station",
-   "board": "KH"
-  },
-  {
-   "name": "Devil Reef",
-   "board": "IH"
+   "board": "KH",
+   "neighbourhood": "Kingsport Head"
   },
   {
    "name": "Esoteric Order of Dagon",
-   "board": "IH"
-  },
-  {
-   "name": "Falcon Point",
-   "board": "IH"
-  },
-  {
-   "name": "First National Grocery",
-   "board": "IH"
-  },
-  {
-   "name": "Gilman House Hotel",
-   "board": "IH"
+   "board": "IH",
+   "neighbourhood": "Church Green"
   },
   {
    "name": "Innsmouth Jail",
-   "board": "IH"
+   "board": "IH",
+   "neighbourhood": "Church Green"
   },
   {
    "name": "Jail Cell",
-   "board": "IH"
+   "board": "IH",
+   "neighbourhood": "Church Green"
+  },
+  {
+   "name": "First National Grocery",
+   "board": "IH",
+   "neighbourhood": "Factory District"
+  },
+  {
+   "name": "Gilman House Hotel",
+   "board": "IH",
+   "neighbourhood": "Factory District"
   },
   {
    "name": "Marsh Refinery",
-   "board": "IH"
+   "board": "IH",
+   "neighbourhood": "Factory District"
+  },
+  {
+   "name": "Devil Reef",
+   "board": "IH",
+   "neighbourhood": "Innsmouth Shore"
+  },
+  {
+   "name": "Falcon Point",
+   "board": "IH",
+   "neighbourhood": "Innsmouth Shore"
   },
   {
    "name": "Y'ha-nthlei",
-   "board": "IH"
+   "board": "IH",
+   "neighbourhood": "Innsmouth Shore"
   }
  ],
  "otherWorlds": [

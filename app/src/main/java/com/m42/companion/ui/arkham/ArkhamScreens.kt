@@ -149,7 +149,7 @@ fun ArkhamBoardScreen(vm: ArkhamViewModel, onBack: () -> Unit, onOpenGallery: ()
 }
 
 private object ArkhamColors {
-    /** Card back colours of the Arkham neighbourhood location decks. */
+    /** Card back colours of the neighbourhood location decks. */
     val neighbourhoods = mapOf(
         "Northside" to Color(0xFFC96D2D),
         "Downtown" to Color(0xFFA8A8A3),
@@ -160,6 +160,19 @@ private object ArkhamColors {
         "French Hill" to Color(0xFF187FC1),
         "Uptown" to Color(0xFFAA352C),
         "Southside" to Color(0xFF79553C),
+        // Dunwich
+        "Village Commons" to Color(0xFF5C7A2E),
+        "Blasted Heath" to Color(0xFF3B2F6B),
+        "Backwoods Country" to Color(0xFFE08A1E),
+        // Kingsport
+        "Kingsport Head" to Color(0xFF6E7173),
+        "South Shore" to Color(0xFFB23A2E),
+        "Harborside" to Color(0xFF8DB33A),
+        "Central Hill" to Color(0xFF1F3F7A),
+        // Innsmouth
+        "Innsmouth Shore" to Color(0xFF6FBFA0),
+        "Factory District" to Color(0xFF5B7083),
+        "Church Green" to Color(0xFFC9A227),
     )
     val boards = mapOf(
         "AH" to Color(0xFF2E5E3E),
@@ -169,11 +182,12 @@ private object ArkhamColors {
     )
     val otherWorld = Color(0xFF4A2C6B)
     val discard = Color(0xFF3D4876)
+    /** Gate colours, deep enough to keep white button text readable. */
     val gates = mapOf(
-        GateColour.red to Color(0xFFE53935),
-        GateColour.green to Color(0xFF43A047),
-        GateColour.blue to Color(0xFF1E88E5),
-        GateColour.yellow to Color(0xFFFDD835),
+        GateColour.red to Color(0xFFB3261E),
+        GateColour.green to Color(0xFF2E7D32),
+        GateColour.blue to Color(0xFF1565C0),
+        GateColour.yellow to Color(0xFFB08800),
     )
 }
 
@@ -192,7 +206,8 @@ private fun arkhamBoardItems(game: ArkhamGame, session: ArkhamSession): List<Boa
                 ArkhamDecks.world(world.name),
                 world.name,
                 color = ArkhamColors.otherWorld,
-                dots = world.colours.map { ArkhamColors.gates.getValue(it) },
+                gradient = world.colours.map { ArkhamColors.gates.getValue(it) },
+                half = true,
             ),
         )
     }
