@@ -56,6 +56,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.graphics.takeOrElse
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -71,7 +72,8 @@ val TwoPaneWidth = 840.dp
 sealed interface BoardItem {
     val key: String
 
-    data class Heading(val title: String) : BoardItem {
+    /** A section title; [color] overrides the theme's heading colour. */
+    data class Heading(val title: String, val color: Color = Color.Unspecified, val large: Boolean = false) : BoardItem {
         override val key = "heading:$title"
     }
 
@@ -186,9 +188,11 @@ private fun DeckGrid(items: List<BoardItem>, minButtonWidth: Dp, modifier: Modif
             when (item) {
                 is BoardItem.Heading -> Text(
                     item.title,
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.padding(top = 12.dp, bottom = 2.dp),
+                    style = if (item.large) MaterialTheme.typography.headlineMedium else MaterialTheme.typography.titleMedium,
+                    color = item.color.takeOrElse { MaterialTheme.colorScheme.primary },
+                    textAlign = if (item.large) TextAlign.Center else TextAlign.Start,
+                    modifier = if (item.large) Modifier.fillMaxWidth().padding(top = 20.dp, bottom = 2.dp)
+                    else Modifier.padding(top = 12.dp, bottom = 2.dp),
                 )
                 is BoardItem.Deck -> DeckButton(item) { onOpen(item.deckId) }
             }

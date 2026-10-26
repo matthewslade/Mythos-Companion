@@ -136,7 +136,9 @@ private val arkhamSkills = mapOf(
 private const val TRAITS = "ITEM|ALLY|RELIC|TOME|WEAPON|MAGICAL|TRINKET|TASK|SERVICE|INCANTATION|RITUAL|GLAMOUR|" +
     "CHARACTER|ELIXIR|MADNESS|INJURY|ILLNESS|BANE|BOON|PURSUIT|TALENT|DEAL|PARANOIA"
 
-private const val ARKHAM_SPECIAL_CARDS = "Retainer|Exhibit Items?|Madness|Injury|Deputy(?: of Arkham)?|Corruption|" +
+// "Deputy" alone is usually Deputy Dingby, the character; only the Deputy of Arkham card is highlighted.
+private const val ARKHAM_SPECIAL_CARDS = "Retainer|Exhibit Items?|Madness|Injury|Deputy of Arkham|(?<=you're the )Deputy|" +
+    "(?<=you are the )Deputy|Corruption|" +
     "Patrol marker|Bank Loan|(?:Silver Twilight(?: Lodge)?|Sheldon Gang|Cult) Membership|Blight|Tainted|Anointed|" +
     "Harried|Psychic|Wanted|Local Guide|Visions|Necrophobia|Private Investigator|Rare Book Collection|Research Materials"
 

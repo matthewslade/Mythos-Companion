@@ -29,6 +29,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.m42.companion.R
@@ -125,9 +126,10 @@ fun ArkhamBoardScreen(vm: ArkhamViewModel, onBack: () -> Unit, onOpenGallery: ()
         if (ready && s == null) LaunchedEffect(Unit) { onNoGame() }
         return
     }
+    val dark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     GameBoard(
         title = "Arkham Horror",
-        items = arkhamBoardItems(g, s),
+        items = arkhamBoardItems(g, s, dark),
         minButtonWidth = 148.dp,
         gallery = gallery,
         galleryActions = galleryActions(vm),
@@ -181,6 +183,13 @@ private object ArkhamColors {
         "IH" to Color(0xFF1E6B6B),
     )
     val otherWorld = Color(0xFF4A2C6B)
+
+    /** Section heading colours per board, as (light theme, dark theme). Arkham uses the app's own green. */
+    val boardHeadings = mapOf(
+        "DH" to (Color(0xFF7A4E2A) to Color(0xFFD9A877)),
+        "KH" to (Color(0xFF6A4C9C) to Color(0xFFC3A8EE)),
+        "IH" to (Color(0xFF1F6A8C) to Color(0xFF7FC4E6)),
+    )
     val discard = Color(0xFF3D4876)
     /** Gate colours, deep enough to keep white button text readable. */
     val gates = mapOf(
@@ -191,15 +200,22 @@ private object ArkhamColors {
     )
 }
 
-private fun arkhamBoardItems(game: ArkhamGame, session: ArkhamSession): List<BoardItem> = buildList {
+private fun arkhamBoardItems(game: ArkhamGame, session: ArkhamSession, dark: Boolean): List<BoardItem> = buildList {
+    var board: String? = null
     for (group in game.locationGroups(session.config)) {
-        add(BoardItem.Heading(group.title))
+        val heading = ArkhamColors.boardHeadings[group.locations.first().board]?.let { if (dark) it.second else it.first }
+            ?: Color.Unspecified
+        if (group.board != board) {
+            board = group.board
+            add(BoardItem.Heading(group.board, heading, large = true))
+        }
+        add(BoardItem.Heading(group.title, heading))
         for (location in group.locations) {
             val color = location.neighbourhood?.let(ArkhamColors.neighbourhoods::get) ?: ArkhamColors.boards.getValue(location.board)
             add(BoardItem.Deck(ArkhamDecks.location(location.name), location.name, color = color))
         }
     }
-    add(BoardItem.Heading("Other Worlds"))
+    add(BoardItem.Heading("Other Worlds", large = true))
     for (world in game.worlds(session.config)) {
         add(
             BoardItem.Deck(

@@ -115,6 +115,16 @@ class MarkupTest {
     }
 
     @Test
+    fun `only the Deputy card is highlighted, not Deputy Dingby`() {
+        assertEquals(emptyList<Pair<String, TermKind>>(), terms("Deputy Dingby strides past you.", TextStyle.ARKHAM).filter { "Deputy" in it.first })
+        assertEquals(
+            listOf("Deputy of Arkham card" to TermKind.CONDITION, "Deputy" to TermKind.CONDITION),
+            terms("If you have the Deputy of Arkham card... you're arrested unless you're the Deputy.", TextStyle.ARKHAM)
+                .filter { "Deputy" in it.first },
+        )
+    }
+
+    @Test
     fun `traits are small capitals and possessions are highlighted separately`() {
         assertEquals(
             listOf("RELIC" to TermKind.TRAIT, "Unique Asset" to TermKind.UNIQUE, "INCANTATION" to TermKind.TRAIT, "Spell" to TermKind.SPELL),

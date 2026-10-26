@@ -42,7 +42,13 @@ object ArkhamDecks {
 }
 
 /** Arkham locations grouped the way the board screen lists them. */
-data class LocationGroup(val title: String, val locations: List<ArkhamLocation>)
+data class LocationGroup(
+    /** The board's name, e.g. "Dunwich". */
+    val board: String,
+    /** The neighbourhood's name, or the board's when its locations have no neighbourhoods. */
+    val title: String,
+    val locations: List<ArkhamLocation>,
+)
 
 class ArkhamGame(private val data: ArkhamData) {
     private val locationCards = data.locationEncounters.associateBy { it.id }
@@ -74,8 +80,8 @@ class ArkhamGame(private val data: ArkhamData) {
     fun worlds(config: ArkhamConfig) = data.otherWorlds.filter { it.expansion in config.inPlay }
 
     fun locationGroups(config: ArkhamConfig): List<LocationGroup> = locations(config)
-        .groupBy { loc -> boardNames.getValue(loc.board) + (loc.neighbourhood?.let { " – $it" } ?: "") }
-        .map { (title, locs) -> LocationGroup(title, locs) }
+        .groupBy { loc -> loc.board to (loc.neighbourhood ?: boardNames.getValue(loc.board)) }
+        .map { (key, locs) -> LocationGroup(boardNames.getValue(key.first), key.second, locs) }
 
     fun deckName(deckId: String): String = when {
         deckId == ArkhamDecks.OTHER -> "Other"

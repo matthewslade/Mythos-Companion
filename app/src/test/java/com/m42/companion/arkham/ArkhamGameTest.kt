@@ -34,14 +34,14 @@ class ArkhamGameTest {
         assertTrue(game.worlds(config).any { it.name == "Lost Carcosa" })
         assertTrue(game.worlds(config).any { it.name == "Unknown Kadath" })
         assertEquals(
-            listOf("Arkham – Northside", "Arkham – Downtown"),
-            game.locationGroups(config).take(2).map { it.title },
+            listOf("Arkham" to "Northside", "Arkham" to "Downtown"),
+            game.locationGroups(config).take(2).map { it.board to it.title },
         )
         assertEquals(
-            listOf("Dunwich – Village Commons", "Dunwich – Blasted Heath", "Dunwich – Backwoods Country"),
+            listOf("Village Commons", "Blasted Heath", "Backwoods Country"),
             game.locationGroups(config).drop(9).take(3).map { it.title },
         )
-        assertTrue(game.locationGroups(config).all { it.locations.size == 3 || it.title == "Arkham – French Hill" })
+        assertTrue(game.locationGroups(config).all { it.locations.size == 3 || it.title == "French Hill" })
     }
 
     @Test
