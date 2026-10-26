@@ -13,6 +13,37 @@ An Android companion app for **Eldritch Horror** and **Arkham Horror (2nd editio
 - **Saving:** each game saves automatically after every change, so you can leave mid-game and continue later, even if Android closes the app. The expansions you pick are remembered.
 - **Screens and themes:** the app follows the system light and dark theme. It adapts from small phones to tablets: on wide screens the deck list and the open deck sit side by side.
 
+## Screenshots
+
+![Eldritch Horror on a tablet in dark mode: one deck per location on the left, the open London deck on the right](docs/screenshots/tablet-eh-dark.png)
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/phone-home.png" alt="Home screen" width="240"></td>
+    <td><img src="docs/screenshots/phone-eh-board.png" alt="Eldritch Horror board" width="240"></td>
+    <td><img src="docs/screenshots/phone-eh-card.png" alt="An Eldritch Horror encounter with colour-coded terms" width="240"></td>
+    <td><img src="docs/screenshots/phone-ah-card-dark.png" alt="An Arkham Horror encounter in dark mode" width="240"></td>
+  </tr>
+  <tr>
+    <td align="center">Pick a game</td>
+    <td align="center">Eldritch board: a deck per location</td>
+    <td align="center">Encounter with highlighted terms</td>
+    <td align="center">Arkham Horror in dark mode</td>
+  </tr>
+</table>
+
+![Arkham Horror on a tablet: Other Worlds with their gate colours, and an Other encounter drawn for R'lyeh](docs/screenshots/tablet-ah-light.png)
+
+### Colour-coded card text
+
+Game terms get a colour and an icon in both games. Eldritch skill tests use the investigator sheet colours.
+
+![Legend of highlighted terms in light and dark themes](docs/screenshots/markup-legend.png)
+
+## Download
+
+Get the latest APK from [Releases](https://github.com/matthewslade/Mythos-Companion/releases/latest) and open it on your device. You'll need to allow installs from unknown sources. It needs Android 8.0 or newer.
+
 ## Building and installing
 
 You need JDK 17 or newer and the Android SDK (compile SDK 37). Point `local.properties` at your SDK with `sdk.dir=/path/to/sdk`.

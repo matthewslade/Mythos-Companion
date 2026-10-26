@@ -42,7 +42,8 @@ fun cardMarkup(text: String, style: TextStyle, colors: CardColors): MarkedText {
     var cursor = 0
     for (position in iconPositions) {
         builder.append(plain.substring(cursor, position))
-        builder.appendInlineContent(terms.first { it.kind.icon != null && it.iconAt == position }.kind.name)
+        // A blank alternate text keeps screen readers from announcing the placeholder character.
+        builder.appendInlineContent(terms.first { it.kind.icon != null && it.iconAt == position }.kind.name, " ")
         builder.append(WORD_JOINER)
         cursor = position
     }

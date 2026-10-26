@@ -176,7 +176,7 @@ fun EldritchBoardScreen(vm: EldritchViewModel, onBack: () -> Unit, onOpenGallery
             if (s.state.deck(EldritchDecks.EXPEDITION).isEmpty()) message("The Expedition deck is empty.")
             else removing = true
         },
-        minButtonWidth = 160.dp,
+        minButtonWidth = 148.dp,
         gallery = gallery,
         galleryActions = galleryActions(vm),
         snackbar = snackbar,

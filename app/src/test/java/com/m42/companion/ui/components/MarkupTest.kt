@@ -15,7 +15,7 @@ class MarkupTest {
     private val colors = CardColors(Color.White, Color.Black, Color.Gray, Tone.entries.associateWith { Color(it.ordinal + 1, 0, 0) })
 
     /** An inline icon placeholder followed by the word joiner that keeps it on the term's line. */
-    private val icon = "${Char(0xFFFD)}${Char(0x2060)}"
+    private val icon = " ${Char(0x2060)}"
     private val nbsp = Char(0xA0)
 
     private fun terms(text: String, style: TextStyle) = findTerms(text, style).map { text.substring(it.range) to it.kind }
